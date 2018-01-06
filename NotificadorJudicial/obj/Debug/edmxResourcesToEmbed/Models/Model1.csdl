@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="S4TControlModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CARGASPERSONA">
+    <Key>
+      <PropertyRef Name="ID_CARGASPERSONA" />
+    </Key>
+    <Property Name="ID_CARGASPERSONA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_DATOSPERSONALES" Type="Int32" />
+    <Property Name="NOMBRECARGA" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="PARENTESCO" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="FECHANACIMIENTOCARGA" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Cargos">
+    <Key>
+      <PropertyRef Name="id_Cargo" />
+    </Key>
+    <Property Name="id_Cargo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpresa" Type="Int32" />
+    <Property Name="NombreCargo" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionCargo" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="id_Cliente" />
+    </Key>
+    <Property Name="id_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpresa" Type="Int32" />
+    <Property Name="RazonSocial" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Rut" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Giro" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Contactos">
+    <Key>
+      <PropertyRef Name="id_Contacto" />
+    </Key>
+    <Property Name="id_Contacto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreContacto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EmailContacto" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Celular" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Skype" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="EsCliente" Type="Boolean" />
+    <Property Name="id_Cliente" Type="Int32" />
+    <Property Name="id_Proveedor" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ControlHITO">
+    <Key>
+      <PropertyRef Name="id_Control" />
+    </Key>
+    <Property Name="id_Control" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_hito" Type="Int32" />
+    <Property Name="ocCliente" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ocProveedor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FacturaCliente" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FacturaProveedor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Boleta" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FechaEmisionOC" Type="DateTime" Precision="3" />
+    <Property Name="FechaEmisionFactura" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DATOSCONYUGE">
+    <Key>
+      <PropertyRef Name="ID_DATOSCONYUGE" />
+    </Key>
+    <Property Name="ID_DATOSCONYUGE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_DATOSPERSONALES" Type="Int32" />
+    <Property Name="NOMBRE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="FECHANACIMIENTOCONYUGE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="LUGARTRABAJOCONYUGE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DATOSEMERGENCIAPERSONA">
+    <Key>
+      <PropertyRef Name="ID_DATOSEMERGENCIA" />
+    </Key>
+    <Property Name="ID_DATOSEMERGENCIA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_DATOSPERSONALES" Type="Int32" />
+    <Property Name="NOMBRE" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="PARENTESCO" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONOEMERGENCIA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="NOMBREINSTITUCIONMEDICA" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="NUMEROEMERGENCIAMEDICA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DATOSPERSONALES">
+    <Key>
+      <PropertyRef Name="ID_DATOSPERSONALES" />
+    </Key>
+    <Property Name="ID_DATOSPERSONALES" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpresa" Type="Int32" />
+    <Property Name="NOMBRE" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="RUT" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="CARGO" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="FECHANACIMIENTO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PAISNACIMIENTO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CIUDADNACIMIENTO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COMUNANACIMIENTO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ISAPREFONASA" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="AFP" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONOPARTICULAR" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONOCELULAR" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CORREOELECTRONICO" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ID_ESTADOCIVIL" Type="Int32" />
+    <Property Name="ID_TIPOPERSONA" Type="Int32" />
+    <Property Name="FECHAINGRESO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FECHACONTRATO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ValorCotizacionIsapre" Type="Double" />
+    <Property Name="ValorGesIsapre" Type="Double" />
+    <Property Name="Activo" Type="Boolean" />
+    <Property Name="id_Perfil" Type="Int32" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DATOSPERSONAPROYECTO">
+    <Key>
+      <PropertyRef Name="ID_DATOSPROYECTO" />
+    </Key>
+    <Property Name="ID_DATOSPROYECTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_DATOSPERSONALES" Type="Int32" />
+    <Property Name="ID_PROYECTO" Type="Int32" />
+    <Property Name="id_Cargo" Type="Int32" />
+    <Property Name="FECHAASIGNACIONPROYECTO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PORCENTAJEASIGNACION" Type="Double" />
+    <Property Name="VALORASIGNACION" Type="Double" />
+    <Property Name="CARGOASIGNADO" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="COMENTARIOS" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DIRECCIONPERSONA">
+    <Key>
+      <PropertyRef Name="ID_DIRECCION" />
+    </Key>
+    <Property Name="ID_DIRECCION" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_DATOSPERSONALES" Type="Int32" />
+    <Property Name="DIRECCION" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="COMUNA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EMPRESAS">
+    <Key>
+      <PropertyRef Name="idEmpresa" />
+    </Key>
+    <Property Name="idEmpresa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RutEmpresa" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="RazonSocial" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="direccionEmpresa" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="fonoEmpresa" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="urlLogo" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ESTADOCIVIL">
+    <Key>
+      <PropertyRef Name="ID_ESTADOCIVIL" />
+    </Key>
+    <Property Name="ID_ESTADOCIVIL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBREESTADO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Hitos">
+    <Key>
+      <PropertyRef Name="id_Hito" />
+    </Key>
+    <Property Name="id_Hito" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Proyecto" Type="Int32" Nullable="false" />
+    <Property Name="NombreHito" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionHito" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="porcentajeHito" Type="Double" />
+    <Property Name="ValorHito" Type="Double" />
+    <Property Name="FechaHito" Type="DateTime" Precision="3" />
+    <Property Name="FechaCumplimientoHito" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FechaVencimientoHito" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="LogControl">
+    <Key>
+      <PropertyRef Name="id_Log" />
+    </Key>
+    <Property Name="id_Log" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tabla" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dato" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idDato" Type="Int32" />
+    <Property Name="fechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Modulo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="id_Menu" />
+    </Key>
+    <Property Name="id_Menu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreMenu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pagina" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="id_Perfil" Type="Int32" />
+    <Property Name="Descripción" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="NombreModulo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="id_Perfil" />
+    </Key>
+    <Property Name="id_Perfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombrePerfil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Proveedores">
+    <Key>
+      <PropertyRef Name="id_Proveedor" />
+    </Key>
+    <Property Name="id_Proveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpresa" Type="Int32" />
+    <Property Name="RazonSocial" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Rut" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Giro" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Proyectos">
+    <Key>
+      <PropertyRef Name="id_Proyecto" />
+    </Key>
+    <Property Name="id_Proyecto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpresa" Type="Int32" />
+    <Property Name="NombreProyecto" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionProyecto" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+    <Property Name="FechaIngresoProyecto" Type="DateTime" Precision="3" />
+    <Property Name="FechaTerminoProyecto" Type="DateTime" Precision="3" />
+    <Property Name="ValorProyecto" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="HitosProyecto" Type="Int32" />
+    <Property Name="id_TipoProveedor" Type="Int32" />
+    <Property Name="id_Cliente" Type="Int32" />
+    <Property Name="id_Contacto" Type="Int32" />
+    <Property Name="id_Proveedor" Type="Int32" />
+    <Property Name="id_Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RegistroAsistencia">
+    <Key>
+      <PropertyRef Name="idRegistro" />
+    </Key>
+    <Property Name="idRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipoRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HoraRegistro" Type="DateTime" Precision="3" />
+    <Property Name="id_datospersonales" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RegistroMovimientosHitos">
+    <Key>
+      <PropertyRef Name="id_Registro" />
+    </Key>
+    <Property Name="id_Registro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_hito" Type="Int32" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="3" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RegistroTarea">
+    <Key>
+      <PropertyRef Name="id_RegistroTarea" />
+    </Key>
+    <Property Name="id_RegistroTarea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Tarea" Type="Int32" />
+    <Property Name="HHRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionRegistro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SOLICITUD_VACACIONES">
+    <Key>
+      <PropertyRef Name="ID_VACACIONES" />
+    </Key>
+    <Property Name="ID_VACACIONES" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_DATOSPERSONALES" Type="Int32" />
+    <Property Name="FechaInicio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fechafin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="Computed" Precision="3" />
+    <Property Name="id_Estado" Type="Int32" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TareaProyecto">
+    <Key>
+      <PropertyRef Name="id_Tarea" />
+    </Key>
+    <Property Name="id_Tarea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Proyecto" Type="Int32" />
+    <Property Name="NombreTarea" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionTarea" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_DatosPersonales" Type="Int32" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="3" />
+    <Property Name="HH_Tarea" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TIPOPERSONA">
+    <Key>
+      <PropertyRef Name="ID_TIPOPERSONA" />
+    </Key>
+    <Property Name="ID_TIPOPERSONA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRETIPO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id_Usuario" />
+    </Key>
+    <Property Name="id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_Perfil" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ValorHH">
+    <Key>
+      <PropertyRef Name="id_Valor" />
+    </Key>
+    <Property Name="id_Valor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Cargo" Type="Int32" />
+    <Property Name="Valor" Type="Double" />
+    <Property Name="Activo" Type="Boolean" />
+    <Property Name="FechaValor" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Estados">
+    <Key>
+      <PropertyRef Name="id_Estado" />
+    </Key>
+    <Property Name="id_Estado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreEstado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TipoProveedores">
+    <Key>
+      <PropertyRef Name="id_TipoProveedor" />
+    </Key>
+    <Property Name="id_TipoProveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreTipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="S4TControlEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CARGASPERSONA" EntityType="Self.CARGASPERSONA" />
+    <EntitySet Name="Cargos" EntityType="Self.Cargos" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Contactos" EntityType="Self.Contactos" />
+    <EntitySet Name="ControlHITO" EntityType="Self.ControlHITO" />
+    <EntitySet Name="DATOSCONYUGE" EntityType="Self.DATOSCONYUGE" />
+    <EntitySet Name="DATOSEMERGENCIAPERSONA" EntityType="Self.DATOSEMERGENCIAPERSONA" />
+    <EntitySet Name="DATOSPERSONALES" EntityType="Self.DATOSPERSONALES" />
+    <EntitySet Name="DATOSPERSONAPROYECTO" EntityType="Self.DATOSPERSONAPROYECTO" />
+    <EntitySet Name="DIRECCIONPERSONA" EntityType="Self.DIRECCIONPERSONA" />
+    <EntitySet Name="EMPRESAS" EntityType="Self.EMPRESAS" />
+    <EntitySet Name="ESTADOCIVIL" EntityType="Self.ESTADOCIVIL" />
+    <EntitySet Name="Hitos" EntityType="Self.Hitos" />
+    <EntitySet Name="LogControl" EntityType="Self.LogControl" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" />
+    <EntitySet Name="Perfil" EntityType="Self.Perfil" />
+    <EntitySet Name="Proveedores" EntityType="Self.Proveedores" />
+    <EntitySet Name="Proyectos" EntityType="Self.Proyectos" />
+    <EntitySet Name="RegistroAsistencia" EntityType="Self.RegistroAsistencia" />
+    <EntitySet Name="RegistroMovimientosHitos" EntityType="Self.RegistroMovimientosHitos" />
+    <EntitySet Name="RegistroTarea" EntityType="Self.RegistroTarea" />
+    <EntitySet Name="SOLICITUD_VACACIONES" EntityType="Self.SOLICITUD_VACACIONES" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TareaProyecto" EntityType="Self.TareaProyecto" />
+    <EntitySet Name="TIPOPERSONA" EntityType="Self.TIPOPERSONA" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="ValorHH" EntityType="Self.ValorHH" />
+    <EntitySet Name="Estados" EntityType="Self.Estados" />
+    <EntitySet Name="TipoProveedores" EntityType="Self.TipoProveedores" />
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_BuscaPersonaxID" ReturnType="Collection(S4TControlModel.sp_get_BuscaPersonaxID_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_BuscarDatosCargasPersona" ReturnType="Collection(S4TControlModel.sp_get_BuscarDatosCargasPersona_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_BuscarDatosEmergenciaPersona" ReturnType="Collection(S4TControlModel.sp_get_BuscarDatosEmergenciaPersona_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_buscaRutPersona" ReturnType="Collection(Int32)">
+      <Parameter Name="rutPersona" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_cargos" ReturnType="Collection(S4TControlModel.sp_get_cargos_Result)">
+      <Parameter Name="EMPRESA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_cargosAsignadoaProyecto" ReturnType="Collection(S4TControlModel.sp_get_cargosAsignadoaProyecto_Result)">
+      <Parameter Name="idCargo" Mode="In" Type="Int32" />
+      <Parameter Name="idValor" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ComboPersonas" ReturnType="Collection(S4TControlModel.sp_get_ComboPersonas_Result)" />
+    <FunctionImport Name="sp_get_ContadorHitos" ReturnType="Collection(Int32)">
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_DatosConyugePersona" ReturnType="Collection(S4TControlModel.sp_get_DatosConyugePersona_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_DatosdeTarea" ReturnType="Collection(S4TControlModel.sp_get_DatosdeTarea_Result)">
+      <Parameter Name="idTarea" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_DatosDireccionPersona" ReturnType="Collection(S4TControlModel.sp_get_DatosDireccionPersona_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_datosEmpresa" ReturnType="Collection(S4TControlModel.sp_get_datosEmpresa_Result)">
+      <Parameter Name="idEmpresa" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_DevuelveIDPRoyecto" ReturnType="Collection(Int32)">
+      <Parameter Name="NombreProyecto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_EstadoAmarillo" ReturnType="Collection(S4TControlModel.sp_get_EstadoAmarillo_Result)" />
+    <FunctionImport Name="sp_get_EstadoRojo" ReturnType="Collection(S4TControlModel.sp_get_EstadoRojo_Result)" />
+    <FunctionImport Name="sp_get_ExisteRutProveedor" ReturnType="Collection(Int32)">
+      <Parameter Name="rut" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_GraficoHitos" ReturnType="Collection(S4TControlModel.sp_get_GraficoHitos_Result)">
+      <Parameter Name="USUARIO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_HitoProyecto" ReturnType="Collection(Int32)">
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_hitosProyecto" ReturnType="Collection(S4TControlModel.sp_get_hitosProyecto_Result)">
+      <Parameter Name="id_Proyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_informeProyecto" ReturnType="Collection(S4TControlModel.sp_get_informeProyecto_Result)">
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_informeProyectoTrackingHitos" ReturnType="Collection(S4TControlModel.sp_get_informeProyectoTrackingHitos_Result)">
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListaContactoCombo" ReturnType="Collection(S4TControlModel.sp_get_ListaContactoCombo_Result)">
+      <Parameter Name="idCliente" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_listadoAsistencia" ReturnType="Collection(S4TControlModel.sp_get_listadoAsistencia_Result)" />
+    <FunctionImport Name="sp_get_ListadoCargasFamiliares" ReturnType="Collection(S4TControlModel.sp_get_ListadoCargasFamiliares_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_listadoClientes" ReturnType="Collection(S4TControlModel.sp_get_listadoClientes_Result)">
+      <Parameter Name="NOMBRECLIENTE" Mode="In" Type="String" />
+      <Parameter Name="EMPRESA" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_listadoContactos" ReturnType="Collection(S4TControlModel.sp_get_listadoContactos_Result)">
+      <Parameter Name="IDPROVEEDOR" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_listadoContactosCliente" ReturnType="Collection(S4TControlModel.sp_get_listadoContactosCliente_Result)">
+      <Parameter Name="IDCLIENTE" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListadoDetalleActividades" ReturnType="Collection(S4TControlModel.sp_get_ListadoDetalleActividades_Result)">
+      <Parameter Name="idTarea" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListadoPersonas" ReturnType="Collection(S4TControlModel.sp_get_ListadoPersonas_Result)">
+      <Parameter Name="idTipoPersonas" Mode="In" Type="Int32" />
+      <Parameter Name="EMPRESA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_listadoProveedores" ReturnType="Collection(S4TControlModel.sp_get_listadoProveedores_Result)">
+      <Parameter Name="NOMBREPROVEEDOR" Mode="In" Type="String" />
+      <Parameter Name="EMPRESA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListadoProyectos" ReturnType="Collection(S4TControlModel.sp_get_ListadoProyectos_Result)">
+      <Parameter Name="idCliente" Mode="In" Type="Int32" />
+      <Parameter Name="idEstado" Mode="In" Type="Int32" />
+      <Parameter Name="Empresa" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListadoRecursosPorProyecto" ReturnType="Collection(S4TControlModel.sp_get_ListadoRecursosPorProyecto_Result)">
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="idDatosProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListadoTareasProyecto" ReturnType="Collection(S4TControlModel.sp_get_ListadoTareasProyecto_Result)">
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListadoTareasxRecurso" ReturnType="Collection(S4TControlModel.sp_get_ListadoTareasxRecurso_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListadoTipoPersona" ReturnType="Collection(S4TControlModel.sp_get_ListadoTipoPersona_Result)" />
+    <FunctionImport Name="sp_get_listadoUsuarios" ReturnType="Collection(S4TControlModel.sp_get_listadoUsuarios_Result)">
+      <Parameter Name="NOMBREUSUARIO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListadoVacacionesPersona" ReturnType="Collection(S4TControlModel.sp_get_ListadoVacacionesPersona_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ListaEstadoCivil" ReturnType="Collection(S4TControlModel.sp_get_ListaEstadoCivil_Result)" />
+    <FunctionImport Name="sp_get_ListaEstados" ReturnType="Collection(S4TControlModel.sp_get_ListaEstados_Result)">
+      <Parameter Name="tipo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GET_MENU" ReturnType="Collection(S4TControlModel.SP_GET_MENU_Result)">
+      <Parameter Name="IDPERFIL" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_misProyectos" ReturnType="Collection(S4TControlModel.sp_get_misProyectos_Result)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_perfil_cargacombo" ReturnType="Collection(S4TControlModel.sp_get_perfil_cargacombo_Result)" />
+    <FunctionImport Name="SP_GET_USUARIO" ReturnType="Collection(S4TControlModel.SP_GET_USUARIO_Result)">
+      <Parameter Name="EMPRESA" Mode="In" Type="String" />
+      <Parameter Name="USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_VacacionesxID" ReturnType="Collection(S4TControlModel.sp_get_VacacionesxID_Result)">
+      <Parameter Name="idVacaciones" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_ValidaAsignacionxProyecto" ReturnType="Collection(Int32)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_get_VerificaEmpresa" ReturnType="Collection(Int32)">
+      <Parameter Name="rutEmpresa" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(S4TControlModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(S4TControlModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_CreacionEdicionCargo" ReturnType="Collection(Decimal)">
+      <Parameter Name="idEmpresa" Mode="In" Type="Int32" />
+      <Parameter Name="idCargo" Mode="In" Type="Int32" />
+      <Parameter Name="nombreCargo" Mode="In" Type="String" />
+      <Parameter Name="descripcionCargo" Mode="In" Type="String" />
+      <Parameter Name="valorCargo" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_creausuarios">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="contraseña" Mode="In" Type="String" />
+      <Parameter Name="perfil" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_EditaHitoProyecto">
+      <Parameter Name="idHito" Mode="In" Type="Int32" />
+      <Parameter Name="NombreHito" Mode="In" Type="String" />
+      <Parameter Name="descripcionHito" Mode="In" Type="String" />
+      <Parameter Name="FechaCumplimientoHito" Mode="In" Type="String" />
+      <Parameter Name="porcentajeHito" Mode="In" Type="Double" />
+      <Parameter Name="idEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_GrabaDetalleActividades" ReturnType="Collection(Decimal)">
+      <Parameter Name="id_tarea" Mode="In" Type="Int32" />
+      <Parameter Name="hhregistro" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_GrabaProveedor">
+      <Parameter Name="idProveedor" Mode="In" Type="Int32" />
+      <Parameter Name="RazonSocial" Mode="In" Type="String" />
+      <Parameter Name="Rut" Mode="In" Type="String" />
+      <Parameter Name="Direccion" Mode="In" Type="String" />
+      <Parameter Name="Telefono" Mode="In" Type="String" />
+      <Parameter Name="Giro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_GrabaProyecto">
+      <Parameter Name="IdProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="NombreProyecto" Mode="In" Type="String" />
+      <Parameter Name="descripcionProyecto" Mode="In" Type="String" />
+      <Parameter Name="fechaIngreso" Mode="In" Type="String" />
+      <Parameter Name="fechaTermino" Mode="In" Type="String" />
+      <Parameter Name="valorProyecto" Mode="In" Type="String" />
+      <Parameter Name="hitosProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="idCliente" Mode="In" Type="Int32" />
+      <Parameter Name="idProveedor" Mode="In" Type="Int32" />
+      <Parameter Name="idContacto" Mode="In" Type="Int32" />
+      <Parameter Name="idEmpresa" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InactivaPersona" ReturnType="Collection(Decimal)">
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertaCargaFamiliarPersona" ReturnType="Collection(Decimal)">
+      <Parameter Name="ID_CARGASPERSONA" Mode="In" Type="Int32" />
+      <Parameter Name="ID_DATOSPERSONALES" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRECARGA" Mode="In" Type="String" />
+      <Parameter Name="PARENTESCO" Mode="In" Type="String" />
+      <Parameter Name="FECHANACIMIENTOCARGA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertaCliente" ReturnType="Collection(Int32)">
+      <Parameter Name="id_Cliente" Mode="In" Type="Int32" />
+      <Parameter Name="RazonSocial" Mode="In" Type="String" />
+      <Parameter Name="RutCliente" Mode="In" Type="String" />
+      <Parameter Name="giroCliente" Mode="In" Type="String" />
+      <Parameter Name="DireccionCliente" Mode="In" Type="String" />
+      <Parameter Name="telefonoCliente" Mode="In" Type="String" />
+      <Parameter Name="idEmpresa" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertaconyugePersona" ReturnType="Collection(Decimal)">
+      <Parameter Name="ID_DATOSPERSONALES" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="FECHANACIMIENTOCONYUGE" Mode="In" Type="String" />
+      <Parameter Name="LUGARTRABAJOCONYUGE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_insertaDatosEmergencia" ReturnType="Collection(Decimal)">
+      <Parameter Name="ID_DATOSPERSONALES" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="PARENTESCO" Mode="In" Type="String" />
+      <Parameter Name="TELEFONOEMERGENCIA" Mode="In" Type="String" />
+      <Parameter Name="NOMBREINSTITUCIONMEDICA" Mode="In" Type="String" />
+      <Parameter Name="NUMEROEMERGENCIAMEDICA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_insertaDatosPersonalesPersona" ReturnType="Collection(Decimal)">
+      <Parameter Name="idDatosPersonales" Mode="In" Type="Int32" />
+      <Parameter Name="idEmpresa" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="rut" Mode="In" Type="String" />
+      <Parameter Name="cargo" Mode="In" Type="String" />
+      <Parameter Name="fechaNacimiento" Mode="In" Type="String" />
+      <Parameter Name="paisNacimiento" Mode="In" Type="String" />
+      <Parameter Name="ciudadNacimiento" Mode="In" Type="String" />
+      <Parameter Name="comunaNacimiento" Mode="In" Type="String" />
+      <Parameter Name="isapre" Mode="In" Type="String" />
+      <Parameter Name="afp" Mode="In" Type="String" />
+      <Parameter Name="telefonoParticular" Mode="In" Type="String" />
+      <Parameter Name="telefonoCelular" Mode="In" Type="String" />
+      <Parameter Name="correoElectronico" Mode="In" Type="String" />
+      <Parameter Name="idEstadoCivil" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoPersona" Mode="In" Type="Int32" />
+      <Parameter Name="FechaIngreso" Mode="In" Type="String" />
+      <Parameter Name="fechaContrato" Mode="In" Type="String" />
+      <Parameter Name="ValorCotizacionIsapre" Mode="In" Type="Double" />
+      <Parameter Name="ValorGesIsapre" Mode="In" Type="Double" />
+      <Parameter Name="idPerfil" Mode="In" Type="Int32" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertaDireccionPersona" ReturnType="Collection(Decimal)">
+      <Parameter Name="ID_DATOSPERSONALES" Mode="In" Type="Int32" />
+      <Parameter Name="DIRECCION" Mode="In" Type="String" />
+      <Parameter Name="COMUNA" Mode="In" Type="String" />
+      <Parameter Name="TELEFONO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_insertaHitoProyecto">
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="NombreHito" Mode="In" Type="String" />
+      <Parameter Name="descripcionHito" Mode="In" Type="String" />
+      <Parameter Name="FechaCumplimientoHito" Mode="In" Type="String" />
+      <Parameter Name="porcentajeHito" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertaRecursoaProyecto" ReturnType="Collection(Decimal)">
+      <Parameter Name="idDatosPersonales" Mode="In" Type="Int32" />
+      <Parameter Name="idProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="idCargo" Mode="In" Type="Int32" />
+      <Parameter Name="idDatosProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="porcentajeAsignacion" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertaRegistroAsistencia" ReturnType="Collection(Decimal)">
+      <Parameter Name="rutPersona" Mode="In" Type="String" />
+      <Parameter Name="idEmpresa" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_insertaSolicitudVacaciones" ReturnType="Collection(Decimal)">
+      <Parameter Name="idVacaciones" Mode="In" Type="Int32" />
+      <Parameter Name="idPersona" Mode="In" Type="Int32" />
+      <Parameter Name="idEstado" Mode="In" Type="Int32" />
+      <Parameter Name="fechaInicio" Mode="In" Type="String" />
+      <Parameter Name="fechaFin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertaTareasProyecto" ReturnType="Collection(Decimal)">
+      <Parameter Name="IdProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="idTarea" Mode="In" Type="Int32" />
+      <Parameter Name="NombreTarea" Mode="In" Type="String" />
+      <Parameter Name="descripcionTarea" Mode="In" Type="String" />
+      <Parameter Name="idDatosPersonales" Mode="In" Type="Int32" />
+      <Parameter Name="HHTarea" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertContactoCliente" ReturnType="Collection(Int32)">
+      <Parameter Name="idcliente" Mode="In" Type="Int32" />
+      <Parameter Name="NombreContacto" Mode="In" Type="String" />
+      <Parameter Name="EmailContacto" Mode="In" Type="String" />
+      <Parameter Name="celular" Mode="In" Type="String" />
+      <Parameter Name="skype" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_InsertContactoProveedor" ReturnType="Collection(Int32)">
+      <Parameter Name="idcontacto" Mode="In" Type="Int32" />
+      <Parameter Name="idProveedor" Mode="In" Type="Int32" />
+      <Parameter Name="NombreContacto" Mode="In" Type="String" />
+      <Parameter Name="EmailContacto" Mode="In" Type="String" />
+      <Parameter Name="celular" Mode="In" Type="String" />
+      <Parameter Name="skype" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_RegistroEmpresa" ReturnType="Collection(Int32)">
+      <Parameter Name="RutEmpresa" Mode="In" Type="String" />
+      <Parameter Name="RazonSocial" Mode="In" Type="String" />
+      <Parameter Name="RutPersona" Mode="In" Type="String" />
+      <Parameter Name="NombrePersona" Mode="In" Type="String" />
+      <Parameter Name="EmailPersona" Mode="In" Type="String" />
+      <Parameter Name="Contraseña" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_UpdateContacto">
+      <Parameter Name="idContacto" Mode="In" Type="Int32" />
+      <Parameter Name="NombreContacto" Mode="In" Type="String" />
+      <Parameter Name="EmailContacto" Mode="In" Type="String" />
+      <Parameter Name="celular" Mode="In" Type="String" />
+      <Parameter Name="skype" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_set_UpdateEmpresa" ReturnType="Collection(Decimal)">
+      <Parameter Name="idEmpresa" Mode="In" Type="Int32" />
+      <Parameter Name="razonSocial" Mode="In" Type="String" />
+      <Parameter Name="direccionEmpresa" Mode="In" Type="String" />
+      <Parameter Name="fonoEmpresa" Mode="In" Type="String" />
+      <Parameter Name="urlLogo" Mode="In" Type="String" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_get_BuscaPersonaxID_Result">
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="false" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="RUT" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="CARGO" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="FECHANACIMIENTO" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="PAISNACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CIUDADNACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="COMUNANACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ISAPREFONASA" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="AFP" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="TELEFONOPARTICULAR" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="TELEFONOCELULAR" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="CORREOELECTRONICO" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="ID_ESTADOCIVIL" Nullable="true" />
+    <Property Type="Int32" Name="ID_TIPOPERSONA" Nullable="true" />
+    <Property Type="String" Name="EstadoCivil" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TipoPersona" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FECHAINGRESO" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="FECHACONTRATO" Nullable="true" MaxLength="30" />
+    <Property Type="Double" Name="ValorCotizacionIsapre" Nullable="true" />
+    <Property Type="Double" Name="ValorGesIsapre" Nullable="true" />
+    <Property Type="String" Name="AntiguedadLaboral" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="AntiguedadContractual" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="id_Perfil" Nullable="true" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_get_BuscarDatosCargasPersona_Result">
+    <Property Type="Int32" Name="ID_CARGASPERSONA" Nullable="false" />
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="true" />
+    <Property Type="String" Name="NOMBRECARGA" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="PARENTESCO" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="FECHANACIMIENTOCARGA" Nullable="true" MaxLength="15" />
+  </ComplexType>
+  <ComplexType Name="sp_get_BuscarDatosEmergenciaPersona_Result">
+    <Property Type="Int32" Name="ID_DATOSEMERGENCIA" Nullable="false" />
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="true" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="PARENTESCO" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="TELEFONOEMERGENCIA" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="NOMBREINSTITUCIONMEDICA" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="NUMEROEMERGENCIAMEDICA" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="sp_get_cargos_Result">
+    <Property Type="Int32" Name="id_Cargo" Nullable="false" />
+    <Property Type="String" Name="NombreCargo" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="DescripcionCargo" Nullable="true" MaxLength="3000" />
+    <Property Type="Int32" Name="id_Valor" Nullable="false" />
+    <Property Type="Double" Name="Valor" Nullable="true" />
+    <Property Type="Boolean" Name="Activo" Nullable="true" />
+    <Property Type="DateTime" Name="FechaValor" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="sp_get_cargosAsignadoaProyecto_Result">
+    <Property Type="String" Name="NombreProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="ValorProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="FECHAASIGNACIONPROYECTO" Nullable="true" MaxLength="15" />
+    <Property Type="Double" Name="HHAsignadasProyecto" Nullable="true" />
+    <Property Type="Double" Name="Valor" Nullable="true" />
+    <Property Type="Double" Name="valorAsignacion" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ComboPersonas_Result">
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="false" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="sp_get_DatosConyugePersona_Result">
+    <Property Type="Int32" Name="ID_DATOSCONYUGE" Nullable="false" />
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="true" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="FECHANACIMIENTOCONYUGE" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="LUGARTRABAJOCONYUGE" Nullable="true" MaxLength="150" />
+  </ComplexType>
+  <ComplexType Name="sp_get_DatosdeTarea_Result">
+    <Property Type="Int32" Name="id_Tarea" Nullable="false" />
+    <Property Type="Int32" Name="id_Proyecto" Nullable="true" />
+    <Property Type="String" Name="NombreTarea" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="DescripcionTarea" Nullable="true" />
+    <Property Type="Int32" Name="id_DatosPersonales" Nullable="true" />
+    <Property Type="DateTime" Name="FechaIngreso" Nullable="true" Precision="23" />
+    <Property Type="String" Name="HH_Tarea" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="sp_get_DatosDireccionPersona_Result">
+    <Property Type="Int32" Name="ID_DIRECCION" Nullable="false" />
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="true" />
+    <Property Type="String" Name="DIRECCION" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="COMUNA" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="TELEFONO" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_datosEmpresa_Result">
+    <Property Type="String" Name="RutEmpresa" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="direccionEmpresa" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="fonoEmpresa" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="urlLogo" Nullable="true" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="sp_get_EstadoAmarillo_Result">
+    <Property Type="Int32" Name="id_Proyecto" Nullable="false" />
+    <Property Type="String" Name="NombreProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="ValorProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="id_Hito" Nullable="false" />
+    <Property Type="String" Name="NombreHito" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="porcentajeHito" Nullable="true" />
+    <Property Type="Double" Name="ValorHito" Nullable="true" />
+    <Property Type="String" Name="FechaVencimientoHito" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="id_Estado" Nullable="false" />
+    <Property Type="String" Name="NombreEstado" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_EstadoRojo_Result">
+    <Property Type="Int32" Name="id_Proyecto" Nullable="false" />
+    <Property Type="String" Name="NombreProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="ValorProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="id_Hito" Nullable="false" />
+    <Property Type="String" Name="NombreHito" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="porcentajeHito" Nullable="true" />
+    <Property Type="Double" Name="ValorHito" Nullable="true" />
+    <Property Type="String" Name="FechaVencimientoHito" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="id_Estado" Nullable="false" />
+    <Property Type="String" Name="NombreEstado" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_GraficoHitos_Result">
+    <Property Type="Int32" Name="id_Hito" Nullable="false" />
+    <Property Type="String" Name="NombreHito" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DescripcionHito" Nullable="true" MaxLength="300" />
+    <Property Type="Double" Name="porcentajeHito" Nullable="true" />
+    <Property Type="Double" Name="ValorHito" Nullable="true" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="NombreEstado" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_hitosProyecto_Result">
+    <Property Type="Int32" Name="id_Hito" Nullable="false" />
+    <Property Type="String" Name="NombreHito" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DescripcionHito" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="porcentaje" Nullable="true" MaxLength="31" />
+    <Property Type="Double" Name="ValorHito" Nullable="true" />
+    <Property Type="DateTime" Name="FechaHito" Nullable="true" />
+    <Property Type="String" Name="FechaVencimientoHito" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="FechaCumplimientoHito" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="NombreEstado" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_informeProyecto_Result">
+    <Property Type="Int32" Name="id_Proyecto" Nullable="false" />
+    <Property Type="String" Name="NombreProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="DescripcionProyecto" Nullable="true" MaxLength="3000" />
+    <Property Type="DateTime" Name="FechaIngresoProyecto" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FechaTerminoProyecto" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ValorProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="HitosProyecto" Nullable="true" />
+    <Property Type="String" Name="EstadoProyecto" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="JPProyecto" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="EmailContacto" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Celular" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_informeProyectoTrackingHitos_Result">
+    <Property Type="String" Name="NombreHito" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="porcentajeHito" Nullable="true" />
+    <Property Type="Double" Name="ValorHito" Nullable="true" />
+    <Property Type="String" Name="FechaCumplimientoHito" Nullable="true" MaxLength="30" />
+    <Property Type="DateTime" Name="FECHAMOVIMIENTO" Nullable="true" Precision="23" />
+    <Property Type="String" Name="OBSMovimiento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListaContactoCombo_Result">
+    <Property Type="Int32" Name="id_Contacto" Nullable="false" />
+    <Property Type="String" Name="NombreContacto" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="sp_get_listadoAsistencia_Result">
+    <Property Type="Int32" Name="idRegistro" Nullable="false" />
+    <Property Type="String" Name="TipoRegistro" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="HoraRegistro" Nullable="true" Precision="23" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoCargasFamiliares_Result">
+    <Property Type="Int32" Name="ID_CARGASPERSONA" Nullable="false" />
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="true" />
+    <Property Type="String" Name="NOMBRECARGA" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="PARENTESCO" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="FECHANACIMIENTOCARGA" Nullable="true" MaxLength="15" />
+  </ComplexType>
+  <ComplexType Name="sp_get_listadoClientes_Result">
+    <Property Type="Int32" Name="id_Cliente" Nullable="false" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="Rut" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Direccion" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Telefono" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Giro" Nullable="true" MaxLength="3000" />
+  </ComplexType>
+  <ComplexType Name="sp_get_listadoContactos_Result">
+    <Property Type="Int32" Name="id_Contacto" Nullable="false" />
+    <Property Type="String" Name="NombreContacto" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="EmailContacto" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Celular" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Skype" Nullable="true" MaxLength="150" />
+  </ComplexType>
+  <ComplexType Name="sp_get_listadoContactosCliente_Result">
+    <Property Type="Int32" Name="id_Contacto" Nullable="false" />
+    <Property Type="String" Name="NombreContacto" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="EmailContacto" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Celular" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Skype" Nullable="true" MaxLength="150" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoDetalleActividades_Result">
+    <Property Type="Int32" Name="id_RegistroTarea" Nullable="false" />
+    <Property Type="Int32" Name="id_Tarea" Nullable="true" />
+    <Property Type="String" Name="HHRegistro" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FechaRegistro" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DescripcionRegistro" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoPersonas_Result">
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="false" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="RUT" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="CARGO" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="FECHANACIMIENTO" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="PAISNACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CIUDADNACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="COMUNANACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ISAPREFONASA" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="AFP" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="TELEFONOPARTICULAR" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="TELEFONOCELULAR" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="CORREOELECTRONICO" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="ID_ESTADOCIVIL" Nullable="true" />
+    <Property Type="Int32" Name="ID_TIPOPERSONA" Nullable="true" />
+    <Property Type="String" Name="EstadoCivil" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TipoPersona" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_listadoProveedores_Result">
+    <Property Type="Int32" Name="id_Proveedor" Nullable="false" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Rut" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Direccion" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="Telefono" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Giro" Nullable="true" MaxLength="3000" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoProyectos_Result">
+    <Property Type="Int32" Name="id_Proyecto" Nullable="false" />
+    <Property Type="String" Name="NombreProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="DescripcionProyecto" Nullable="true" MaxLength="3000" />
+    <Property Type="Int32" Name="idjp" Nullable="false" />
+    <Property Type="String" Name="NombreContacto" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="FechaIngreso" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="FechaTerminoProyecto" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="HitosProyecto" Nullable="true" />
+    <Property Type="String" Name="ValorProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="id_Cliente" Nullable="false" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="id_Proveedor" Nullable="false" />
+    <Property Type="String" Name="Proveedor" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoRecursosPorProyecto_Result">
+    <Property Type="Int32" Name="ID_DATOSPROYECTO" Nullable="false" />
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="true" />
+    <Property Type="Int32" Name="ID_PROYECTO" Nullable="true" />
+    <Property Type="String" Name="FECHAASIGNACIONPROYECTO" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="PORCENTAJEASIGNACION" Nullable="true" MaxLength="33" />
+    <Property Type="Double" Name="ValorHH" Nullable="true" />
+    <Property Type="Double" Name="VALORASIGNACION" Nullable="true" />
+    <Property Type="String" Name="CARGOASIGNADO" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="id_Cargo" Nullable="true" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+    <Property Type="Boolean" Name="Activo" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoTareasProyecto_Result">
+    <Property Type="Int32" Name="id_Proyecto" Nullable="true" />
+    <Property Type="Int32" Name="id_Tarea" Nullable="false" />
+    <Property Type="String" Name="NombreTarea" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="DescripcionTarea" Nullable="true" />
+    <Property Type="String" Name="HH_Tarea" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoTareasxRecurso_Result">
+    <Property Type="Int32" Name="id_Proyecto" Nullable="true" />
+    <Property Type="Int32" Name="id_Tarea" Nullable="false" />
+    <Property Type="String" Name="NombreTarea" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="DescripcionTarea" Nullable="true" />
+    <Property Type="String" Name="HH_Tarea" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoTipoPersona_Result">
+    <Property Type="Int32" Name="ID_TIPOPERSONA" Nullable="false" />
+    <Property Type="String" Name="NOMBRETIPO" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_listadoUsuarios_Result">
+    <Property Type="Int32" Name="id_Usuario" Nullable="false" />
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="password" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="NombrePerfil" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListadoVacacionesPersona_Result">
+    <Property Type="Int32" Name="ID_VACACIONES" Nullable="false" />
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="true" />
+    <Property Type="String" Name="FechaInicio" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Fechafin" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="DIASSOLICITADOS" Nullable="true" />
+    <Property Type="DateTime" Name="FechaSolicitud" Nullable="false" Precision="23" />
+    <Property Type="String" Name="NombreEstado" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Observaciones" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListaEstadoCivil_Result">
+    <Property Type="Int32" Name="ID_ESTADOCIVIL" Nullable="false" />
+    <Property Type="String" Name="NOMBREESTADO" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_get_ListaEstados_Result">
+    <Property Type="Int32" Name="id_Estado" Nullable="false" />
+    <Property Type="String" Name="NombreEstado" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="Activo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GET_MENU_Result">
+    <Property Type="Int32" Name="id_Menu" Nullable="false" />
+    <Property Type="String" Name="NombreMenu" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Pagina" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="Descripción" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="NombreModulo" Nullable="true" MaxLength="150" />
+  </ComplexType>
+  <ComplexType Name="sp_get_misProyectos_Result">
+    <Property Type="Int32" Name="ID_DATOSPROYECTO" Nullable="false" />
+    <Property Type="Int32" Name="ID_PROYECTO" Nullable="true" />
+    <Property Type="String" Name="NombreProyecto" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="id_Cargo" Nullable="true" />
+    <Property Type="String" Name="CARGOASIGNADO" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="DescripcionCargo" Nullable="true" MaxLength="3000" />
+    <Property Type="String" Name="FECHAASIGNACIONPROYECTO" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="DescripcionProyecto" Nullable="true" MaxLength="3000" />
+    <Property Type="DateTime" Name="FechaTerminoProyecto" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="id_Cliente" Nullable="true" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="HHAsignadas" Nullable="true" MaxLength="33" />
+    <Property Type="Double" Name="VALORASIGNACION" Nullable="true" />
+    <Property Type="String" Name="FechaTerminoAsignacion" Nullable="true" MaxLength="8000" />
+  </ComplexType>
+  <ComplexType Name="sp_get_perfil_cargacombo_Result">
+    <Property Type="Int32" Name="id_Perfil" Nullable="false" />
+    <Property Type="String" Name="NombrePerfil" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="SP_GET_USUARIO_Result">
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="false" />
+    <Property Type="String" Name="NOMBRE" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="RUT" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="CARGO" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="FECHANACIMIENTO" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="PAISNACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CIUDADNACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="COMUNANACIMIENTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ISAPREFONASA" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="AFP" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="TELEFONOPARTICULAR" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="TELEFONOCELULAR" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="CORREOELECTRONICO" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="ID_ESTADOCIVIL" Nullable="true" />
+    <Property Type="Int32" Name="ID_TIPOPERSONA" Nullable="true" />
+    <Property Type="String" Name="FECHAINGRESO" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="FECHACONTRATO" Nullable="true" MaxLength="30" />
+    <Property Type="Double" Name="ValorCotizacionIsapre" Nullable="true" />
+    <Property Type="Double" Name="ValorGesIsapre" Nullable="true" />
+    <Property Type="Boolean" Name="Activo" Nullable="true" />
+    <Property Type="Int32" Name="id_Perfil" Nullable="true" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="idEmpresa" Nullable="false" />
+    <Property Type="String" Name="RutEmpresa" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="direccionEmpresa" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="fonoEmpresa" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="urlLogo" Nullable="true" MaxLength="300" />
+    <Property Type="Boolean" Name="Activo1" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_get_VacacionesxID_Result">
+    <Property Type="Int32" Name="ID_VACACIONES" Nullable="false" />
+    <Property Type="Int32" Name="ID_DATOSPERSONALES" Nullable="true" />
+    <Property Type="String" Name="FechaInicio" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Fechafin" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaSolicitud" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="DIASSOLICITADOS" Nullable="true" />
+    <Property Type="Int32" Name="id_Estado" Nullable="false" />
+    <Property Type="String" Name="NombreEstado" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Observaciones" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

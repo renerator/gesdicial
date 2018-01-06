@@ -1,0 +1,960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="S4TControlModelStoreContainer" CdmEntityContainer="S4TControlEntities">
+    <EntitySetMapping Name="CARGASPERSONA">
+      <EntityTypeMapping TypeName="S4TControlModel.CARGASPERSONA">
+        <MappingFragment StoreEntitySet="CARGASPERSONA">
+          <ScalarProperty Name="ID_CARGASPERSONA" ColumnName="ID_CARGASPERSONA" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRECARGA" ColumnName="NOMBRECARGA" />
+          <ScalarProperty Name="PARENTESCO" ColumnName="PARENTESCO" />
+          <ScalarProperty Name="FECHANACIMIENTOCARGA" ColumnName="FECHANACIMIENTOCARGA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargos">
+      <EntityTypeMapping TypeName="S4TControlModel.Cargos">
+        <MappingFragment StoreEntitySet="Cargos">
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="NombreCargo" ColumnName="NombreCargo" />
+          <ScalarProperty Name="DescripcionCargo" ColumnName="DescripcionCargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="S4TControlModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Giro" ColumnName="Giro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contactos">
+      <EntityTypeMapping TypeName="S4TControlModel.Contactos">
+        <MappingFragment StoreEntitySet="Contactos">
+          <ScalarProperty Name="id_Contacto" ColumnName="id_Contacto" />
+          <ScalarProperty Name="NombreContacto" ColumnName="NombreContacto" />
+          <ScalarProperty Name="EmailContacto" ColumnName="EmailContacto" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+          <ScalarProperty Name="EsCliente" ColumnName="EsCliente" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="id_Proveedor" ColumnName="id_Proveedor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ControlHITO">
+      <EntityTypeMapping TypeName="S4TControlModel.ControlHITO">
+        <MappingFragment StoreEntitySet="ControlHITO">
+          <ScalarProperty Name="id_Control" ColumnName="id_Control" />
+          <ScalarProperty Name="id_hito" ColumnName="id_hito" />
+          <ScalarProperty Name="ocCliente" ColumnName="ocCliente" />
+          <ScalarProperty Name="ocProveedor" ColumnName="ocProveedor" />
+          <ScalarProperty Name="FacturaCliente" ColumnName="FacturaCliente" />
+          <ScalarProperty Name="FacturaProveedor" ColumnName="FacturaProveedor" />
+          <ScalarProperty Name="Boleta" ColumnName="Boleta" />
+          <ScalarProperty Name="FechaEmisionOC" ColumnName="FechaEmisionOC" />
+          <ScalarProperty Name="FechaEmisionFactura" ColumnName="FechaEmisionFactura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DATOSCONYUGE">
+      <EntityTypeMapping TypeName="S4TControlModel.DATOSCONYUGE">
+        <MappingFragment StoreEntitySet="DATOSCONYUGE">
+          <ScalarProperty Name="ID_DATOSCONYUGE" ColumnName="ID_DATOSCONYUGE" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="FECHANACIMIENTOCONYUGE" ColumnName="FECHANACIMIENTOCONYUGE" />
+          <ScalarProperty Name="LUGARTRABAJOCONYUGE" ColumnName="LUGARTRABAJOCONYUGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DATOSEMERGENCIAPERSONA">
+      <EntityTypeMapping TypeName="S4TControlModel.DATOSEMERGENCIAPERSONA">
+        <MappingFragment StoreEntitySet="DATOSEMERGENCIAPERSONA">
+          <ScalarProperty Name="ID_DATOSEMERGENCIA" ColumnName="ID_DATOSEMERGENCIA" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="PARENTESCO" ColumnName="PARENTESCO" />
+          <ScalarProperty Name="TELEFONOEMERGENCIA" ColumnName="TELEFONOEMERGENCIA" />
+          <ScalarProperty Name="NOMBREINSTITUCIONMEDICA" ColumnName="NOMBREINSTITUCIONMEDICA" />
+          <ScalarProperty Name="NUMEROEMERGENCIAMEDICA" ColumnName="NUMEROEMERGENCIAMEDICA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DATOSPERSONALES">
+      <EntityTypeMapping TypeName="S4TControlModel.DATOSPERSONALES">
+        <MappingFragment StoreEntitySet="DATOSPERSONALES">
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="CARGO" ColumnName="CARGO" />
+          <ScalarProperty Name="FECHANACIMIENTO" ColumnName="FECHANACIMIENTO" />
+          <ScalarProperty Name="PAISNACIMIENTO" ColumnName="PAISNACIMIENTO" />
+          <ScalarProperty Name="CIUDADNACIMIENTO" ColumnName="CIUDADNACIMIENTO" />
+          <ScalarProperty Name="COMUNANACIMIENTO" ColumnName="COMUNANACIMIENTO" />
+          <ScalarProperty Name="ISAPREFONASA" ColumnName="ISAPREFONASA" />
+          <ScalarProperty Name="AFP" ColumnName="AFP" />
+          <ScalarProperty Name="TELEFONOPARTICULAR" ColumnName="TELEFONOPARTICULAR" />
+          <ScalarProperty Name="TELEFONOCELULAR" ColumnName="TELEFONOCELULAR" />
+          <ScalarProperty Name="CORREOELECTRONICO" ColumnName="CORREOELECTRONICO" />
+          <ScalarProperty Name="ID_ESTADOCIVIL" ColumnName="ID_ESTADOCIVIL" />
+          <ScalarProperty Name="ID_TIPOPERSONA" ColumnName="ID_TIPOPERSONA" />
+          <ScalarProperty Name="FECHAINGRESO" ColumnName="FECHAINGRESO" />
+          <ScalarProperty Name="FECHACONTRATO" ColumnName="FECHACONTRATO" />
+          <ScalarProperty Name="ValorCotizacionIsapre" ColumnName="ValorCotizacionIsapre" />
+          <ScalarProperty Name="ValorGesIsapre" ColumnName="ValorGesIsapre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DATOSPERSONAPROYECTO">
+      <EntityTypeMapping TypeName="S4TControlModel.DATOSPERSONAPROYECTO">
+        <MappingFragment StoreEntitySet="DATOSPERSONAPROYECTO">
+          <ScalarProperty Name="ID_DATOSPROYECTO" ColumnName="ID_DATOSPROYECTO" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="ID_PROYECTO" ColumnName="ID_PROYECTO" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="FECHAASIGNACIONPROYECTO" ColumnName="FECHAASIGNACIONPROYECTO" />
+          <ScalarProperty Name="PORCENTAJEASIGNACION" ColumnName="PORCENTAJEASIGNACION" />
+          <ScalarProperty Name="VALORASIGNACION" ColumnName="VALORASIGNACION" />
+          <ScalarProperty Name="CARGOASIGNADO" ColumnName="CARGOASIGNADO" />
+          <ScalarProperty Name="COMENTARIOS" ColumnName="COMENTARIOS" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIRECCIONPERSONA">
+      <EntityTypeMapping TypeName="S4TControlModel.DIRECCIONPERSONA">
+        <MappingFragment StoreEntitySet="DIRECCIONPERSONA">
+          <ScalarProperty Name="ID_DIRECCION" ColumnName="ID_DIRECCION" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="COMUNA" ColumnName="COMUNA" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPRESAS">
+      <EntityTypeMapping TypeName="S4TControlModel.EMPRESAS">
+        <MappingFragment StoreEntitySet="EMPRESAS">
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="RutEmpresa" ColumnName="RutEmpresa" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="direccionEmpresa" ColumnName="direccionEmpresa" />
+          <ScalarProperty Name="fonoEmpresa" ColumnName="fonoEmpresa" />
+          <ScalarProperty Name="urlLogo" ColumnName="urlLogo" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOCIVIL">
+      <EntityTypeMapping TypeName="S4TControlModel.ESTADOCIVIL">
+        <MappingFragment StoreEntitySet="ESTADOCIVIL">
+          <ScalarProperty Name="ID_ESTADOCIVIL" ColumnName="ID_ESTADOCIVIL" />
+          <ScalarProperty Name="NOMBREESTADO" ColumnName="NOMBREESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hitos">
+      <EntityTypeMapping TypeName="S4TControlModel.Hitos">
+        <MappingFragment StoreEntitySet="Hitos">
+          <ScalarProperty Name="id_Hito" ColumnName="id_Hito" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="NombreHito" ColumnName="NombreHito" />
+          <ScalarProperty Name="DescripcionHito" ColumnName="DescripcionHito" />
+          <ScalarProperty Name="porcentajeHito" ColumnName="porcentajeHito" />
+          <ScalarProperty Name="ValorHito" ColumnName="ValorHito" />
+          <ScalarProperty Name="FechaHito" ColumnName="FechaHito" />
+          <ScalarProperty Name="FechaCumplimientoHito" ColumnName="FechaCumplimientoHito" />
+          <ScalarProperty Name="FechaVencimientoHito" ColumnName="FechaVencimientoHito" />
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogControl">
+      <EntityTypeMapping TypeName="S4TControlModel.LogControl">
+        <MappingFragment StoreEntitySet="LogControl">
+          <ScalarProperty Name="id_Log" ColumnName="id_Log" />
+          <ScalarProperty Name="Tabla" ColumnName="Tabla" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+          <ScalarProperty Name="idDato" ColumnName="idDato" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="Modulo" ColumnName="Modulo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="S4TControlModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="id_Menu" ColumnName="id_Menu" />
+          <ScalarProperty Name="NombreMenu" ColumnName="NombreMenu" />
+          <ScalarProperty Name="Pagina" ColumnName="Pagina" />
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="Descripción" ColumnName="Descripción" />
+          <ScalarProperty Name="NombreModulo" ColumnName="NombreModulo" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perfil">
+      <EntityTypeMapping TypeName="S4TControlModel.Perfil">
+        <MappingFragment StoreEntitySet="Perfil">
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="NombrePerfil" ColumnName="NombrePerfil" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedores">
+      <EntityTypeMapping TypeName="S4TControlModel.Proveedores">
+        <MappingFragment StoreEntitySet="Proveedores">
+          <ScalarProperty Name="id_Proveedor" ColumnName="id_Proveedor" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Giro" ColumnName="Giro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proyectos">
+      <EntityTypeMapping TypeName="S4TControlModel.Proyectos">
+        <MappingFragment StoreEntitySet="Proyectos">
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="NombreProyecto" ColumnName="NombreProyecto" />
+          <ScalarProperty Name="DescripcionProyecto" ColumnName="DescripcionProyecto" />
+          <ScalarProperty Name="FechaIngresoProyecto" ColumnName="FechaIngresoProyecto" />
+          <ScalarProperty Name="FechaTerminoProyecto" ColumnName="FechaTerminoProyecto" />
+          <ScalarProperty Name="ValorProyecto" ColumnName="ValorProyecto" />
+          <ScalarProperty Name="HitosProyecto" ColumnName="HitosProyecto" />
+          <ScalarProperty Name="id_TipoProveedor" ColumnName="id_TipoProveedor" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="id_Contacto" ColumnName="id_Contacto" />
+          <ScalarProperty Name="id_Proveedor" ColumnName="id_Proveedor" />
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegistroAsistencia">
+      <EntityTypeMapping TypeName="S4TControlModel.RegistroAsistencia">
+        <MappingFragment StoreEntitySet="RegistroAsistencia">
+          <ScalarProperty Name="idRegistro" ColumnName="idRegistro" />
+          <ScalarProperty Name="TipoRegistro" ColumnName="TipoRegistro" />
+          <ScalarProperty Name="HoraRegistro" ColumnName="HoraRegistro" />
+          <ScalarProperty Name="id_datospersonales" ColumnName="id_datospersonales" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegistroMovimientosHitos">
+      <EntityTypeMapping TypeName="S4TControlModel.RegistroMovimientosHitos">
+        <MappingFragment StoreEntitySet="RegistroMovimientosHitos">
+          <ScalarProperty Name="id_Registro" ColumnName="id_Registro" />
+          <ScalarProperty Name="id_hito" ColumnName="id_hito" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegistroTarea">
+      <EntityTypeMapping TypeName="S4TControlModel.RegistroTarea">
+        <MappingFragment StoreEntitySet="RegistroTarea">
+          <ScalarProperty Name="id_RegistroTarea" ColumnName="id_RegistroTarea" />
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+          <ScalarProperty Name="HHRegistro" ColumnName="HHRegistro" />
+          <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="DescripcionRegistro" ColumnName="DescripcionRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOLICITUD_VACACIONES">
+      <EntityTypeMapping TypeName="S4TControlModel.SOLICITUD_VACACIONES">
+        <MappingFragment StoreEntitySet="SOLICITUD_VACACIONES">
+          <ScalarProperty Name="ID_VACACIONES" ColumnName="ID_VACACIONES" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="Fechafin" ColumnName="Fechafin" />
+          <ScalarProperty Name="FechaSolicitud" ColumnName="FechaSolicitud" />
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="S4TControlModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TareaProyecto">
+      <EntityTypeMapping TypeName="S4TControlModel.TareaProyecto">
+        <MappingFragment StoreEntitySet="TareaProyecto">
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="NombreTarea" ColumnName="NombreTarea" />
+          <ScalarProperty Name="DescripcionTarea" ColumnName="DescripcionTarea" />
+          <ScalarProperty Name="id_DatosPersonales" ColumnName="id_DatosPersonales" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="HH_Tarea" ColumnName="HH_Tarea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOPERSONA">
+      <EntityTypeMapping TypeName="S4TControlModel.TIPOPERSONA">
+        <MappingFragment StoreEntitySet="TIPOPERSONA">
+          <ScalarProperty Name="ID_TIPOPERSONA" ColumnName="ID_TIPOPERSONA" />
+          <ScalarProperty Name="NOMBRETIPO" ColumnName="NOMBRETIPO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="S4TControlModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ValorHH">
+      <EntityTypeMapping TypeName="S4TControlModel.ValorHH">
+        <MappingFragment StoreEntitySet="ValorHH">
+          <ScalarProperty Name="id_Valor" ColumnName="id_Valor" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="FechaValor" ColumnName="FechaValor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estados">
+      <EntityTypeMapping TypeName="S4TControlModel.Estados">
+        <MappingFragment StoreEntitySet="Estados">
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoProveedores">
+      <EntityTypeMapping TypeName="S4TControlModel.TipoProveedores">
+        <MappingFragment StoreEntitySet="TipoProveedores">
+          <ScalarProperty Name="id_TipoProveedor" ColumnName="id_TipoProveedor" />
+          <ScalarProperty Name="NombreTipo" ColumnName="NombreTipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="S4TControlModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="S4TControlModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="S4TControlModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_get_BuscaPersonaxID" FunctionName="S4TControlModel.Store.sp_get_BuscaPersonaxID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_BuscaPersonaxID_Result">
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="CARGO" ColumnName="CARGO" />
+          <ScalarProperty Name="FECHANACIMIENTO" ColumnName="FECHANACIMIENTO" />
+          <ScalarProperty Name="PAISNACIMIENTO" ColumnName="PAISNACIMIENTO" />
+          <ScalarProperty Name="CIUDADNACIMIENTO" ColumnName="CIUDADNACIMIENTO" />
+          <ScalarProperty Name="COMUNANACIMIENTO" ColumnName="COMUNANACIMIENTO" />
+          <ScalarProperty Name="ISAPREFONASA" ColumnName="ISAPREFONASA" />
+          <ScalarProperty Name="AFP" ColumnName="AFP" />
+          <ScalarProperty Name="TELEFONOPARTICULAR" ColumnName="TELEFONOPARTICULAR" />
+          <ScalarProperty Name="TELEFONOCELULAR" ColumnName="TELEFONOCELULAR" />
+          <ScalarProperty Name="CORREOELECTRONICO" ColumnName="CORREOELECTRONICO" />
+          <ScalarProperty Name="ID_ESTADOCIVIL" ColumnName="ID_ESTADOCIVIL" />
+          <ScalarProperty Name="ID_TIPOPERSONA" ColumnName="ID_TIPOPERSONA" />
+          <ScalarProperty Name="EstadoCivil" ColumnName="EstadoCivil" />
+          <ScalarProperty Name="TipoPersona" ColumnName="TipoPersona" />
+          <ScalarProperty Name="FECHAINGRESO" ColumnName="FECHAINGRESO" />
+          <ScalarProperty Name="FECHACONTRATO" ColumnName="FECHACONTRATO" />
+          <ScalarProperty Name="ValorCotizacionIsapre" ColumnName="ValorCotizacionIsapre" />
+          <ScalarProperty Name="ValorGesIsapre" ColumnName="ValorGesIsapre" />
+          <ScalarProperty Name="AntiguedadLaboral" ColumnName="AntiguedadLaboral" />
+          <ScalarProperty Name="AntiguedadContractual" ColumnName="AntiguedadContractual" />
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_BuscarDatosCargasPersona" FunctionName="S4TControlModel.Store.sp_get_BuscarDatosCargasPersona">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_BuscarDatosCargasPersona_Result">
+          <ScalarProperty Name="ID_CARGASPERSONA" ColumnName="ID_CARGASPERSONA" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRECARGA" ColumnName="NOMBRECARGA" />
+          <ScalarProperty Name="PARENTESCO" ColumnName="PARENTESCO" />
+          <ScalarProperty Name="FECHANACIMIENTOCARGA" ColumnName="FECHANACIMIENTOCARGA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_BuscarDatosEmergenciaPersona" FunctionName="S4TControlModel.Store.sp_get_BuscarDatosEmergenciaPersona">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_BuscarDatosEmergenciaPersona_Result">
+          <ScalarProperty Name="ID_DATOSEMERGENCIA" ColumnName="ID_DATOSEMERGENCIA" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="PARENTESCO" ColumnName="PARENTESCO" />
+          <ScalarProperty Name="TELEFONOEMERGENCIA" ColumnName="TELEFONOEMERGENCIA" />
+          <ScalarProperty Name="NOMBREINSTITUCIONMEDICA" ColumnName="NOMBREINSTITUCIONMEDICA" />
+          <ScalarProperty Name="NUMEROEMERGENCIAMEDICA" ColumnName="NUMEROEMERGENCIAMEDICA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_buscaRutPersona" FunctionName="S4TControlModel.Store.sp_get_buscaRutPersona" />
+    <FunctionImportMapping FunctionImportName="sp_get_cargos" FunctionName="S4TControlModel.Store.sp_get_cargos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_cargos_Result">
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="NombreCargo" ColumnName="NombreCargo" />
+          <ScalarProperty Name="DescripcionCargo" ColumnName="DescripcionCargo" />
+          <ScalarProperty Name="id_Valor" ColumnName="id_Valor" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="FechaValor" ColumnName="FechaValor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_cargosAsignadoaProyecto" FunctionName="S4TControlModel.Store.sp_get_cargosAsignadoaProyecto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_cargosAsignadoaProyecto_Result">
+          <ScalarProperty Name="NombreProyecto" ColumnName="NombreProyecto" />
+          <ScalarProperty Name="ValorProyecto" ColumnName="ValorProyecto" />
+          <ScalarProperty Name="FECHAASIGNACIONPROYECTO" ColumnName="FECHAASIGNACIONPROYECTO" />
+          <ScalarProperty Name="HHAsignadasProyecto" ColumnName="HHAsignadasProyecto" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="valorAsignacion" ColumnName="valorAsignacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ComboPersonas" FunctionName="S4TControlModel.Store.sp_get_ComboPersonas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ComboPersonas_Result">
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ContadorHitos" FunctionName="S4TControlModel.Store.sp_get_ContadorHitos" />
+    <FunctionImportMapping FunctionImportName="sp_get_DatosConyugePersona" FunctionName="S4TControlModel.Store.sp_get_DatosConyugePersona">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_DatosConyugePersona_Result">
+          <ScalarProperty Name="ID_DATOSCONYUGE" ColumnName="ID_DATOSCONYUGE" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="FECHANACIMIENTOCONYUGE" ColumnName="FECHANACIMIENTOCONYUGE" />
+          <ScalarProperty Name="LUGARTRABAJOCONYUGE" ColumnName="LUGARTRABAJOCONYUGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_DatosdeTarea" FunctionName="S4TControlModel.Store.sp_get_DatosdeTarea">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_DatosdeTarea_Result">
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="NombreTarea" ColumnName="NombreTarea" />
+          <ScalarProperty Name="DescripcionTarea" ColumnName="DescripcionTarea" />
+          <ScalarProperty Name="id_DatosPersonales" ColumnName="id_DatosPersonales" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="HH_Tarea" ColumnName="HH_Tarea" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_DatosDireccionPersona" FunctionName="S4TControlModel.Store.sp_get_DatosDireccionPersona">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_DatosDireccionPersona_Result">
+          <ScalarProperty Name="ID_DIRECCION" ColumnName="ID_DIRECCION" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="COMUNA" ColumnName="COMUNA" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_datosEmpresa" FunctionName="S4TControlModel.Store.sp_get_datosEmpresa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_datosEmpresa_Result">
+          <ScalarProperty Name="RutEmpresa" ColumnName="RutEmpresa" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="direccionEmpresa" ColumnName="direccionEmpresa" />
+          <ScalarProperty Name="fonoEmpresa" ColumnName="fonoEmpresa" />
+          <ScalarProperty Name="urlLogo" ColumnName="urlLogo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_DevuelveIDPRoyecto" FunctionName="S4TControlModel.Store.sp_get_DevuelveIDPRoyecto" />
+    <FunctionImportMapping FunctionImportName="sp_get_EstadoAmarillo" FunctionName="S4TControlModel.Store.sp_get_EstadoAmarillo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_EstadoAmarillo_Result">
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="NombreProyecto" ColumnName="NombreProyecto" />
+          <ScalarProperty Name="ValorProyecto" ColumnName="ValorProyecto" />
+          <ScalarProperty Name="id_Hito" ColumnName="id_Hito" />
+          <ScalarProperty Name="NombreHito" ColumnName="NombreHito" />
+          <ScalarProperty Name="porcentajeHito" ColumnName="porcentajeHito" />
+          <ScalarProperty Name="ValorHito" ColumnName="ValorHito" />
+          <ScalarProperty Name="FechaVencimientoHito" ColumnName="FechaVencimientoHito" />
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_EstadoRojo" FunctionName="S4TControlModel.Store.sp_get_EstadoRojo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_EstadoRojo_Result">
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="NombreProyecto" ColumnName="NombreProyecto" />
+          <ScalarProperty Name="ValorProyecto" ColumnName="ValorProyecto" />
+          <ScalarProperty Name="id_Hito" ColumnName="id_Hito" />
+          <ScalarProperty Name="NombreHito" ColumnName="NombreHito" />
+          <ScalarProperty Name="porcentajeHito" ColumnName="porcentajeHito" />
+          <ScalarProperty Name="ValorHito" ColumnName="ValorHito" />
+          <ScalarProperty Name="FechaVencimientoHito" ColumnName="FechaVencimientoHito" />
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ExisteRutProveedor" FunctionName="S4TControlModel.Store.sp_get_ExisteRutProveedor" />
+    <FunctionImportMapping FunctionImportName="sp_get_GraficoHitos" FunctionName="S4TControlModel.Store.sp_get_GraficoHitos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_GraficoHitos_Result">
+          <ScalarProperty Name="id_Hito" ColumnName="id_Hito" />
+          <ScalarProperty Name="NombreHito" ColumnName="NombreHito" />
+          <ScalarProperty Name="DescripcionHito" ColumnName="DescripcionHito" />
+          <ScalarProperty Name="porcentajeHito" ColumnName="porcentajeHito" />
+          <ScalarProperty Name="ValorHito" ColumnName="ValorHito" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_HitoProyecto" FunctionName="S4TControlModel.Store.sp_get_HitoProyecto" />
+    <FunctionImportMapping FunctionImportName="sp_get_hitosProyecto" FunctionName="S4TControlModel.Store.sp_get_hitosProyecto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_hitosProyecto_Result">
+          <ScalarProperty Name="id_Hito" ColumnName="id_Hito" />
+          <ScalarProperty Name="NombreHito" ColumnName="NombreHito" />
+          <ScalarProperty Name="DescripcionHito" ColumnName="DescripcionHito" />
+          <ScalarProperty Name="porcentaje" ColumnName="porcentaje" />
+          <ScalarProperty Name="ValorHito" ColumnName="ValorHito" />
+          <ScalarProperty Name="FechaHito" ColumnName="FechaHito" />
+          <ScalarProperty Name="FechaVencimientoHito" ColumnName="FechaVencimientoHito" />
+          <ScalarProperty Name="FechaCumplimientoHito" ColumnName="FechaCumplimientoHito" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_informeProyecto" FunctionName="S4TControlModel.Store.sp_get_informeProyecto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_informeProyecto_Result">
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="NombreProyecto" ColumnName="NombreProyecto" />
+          <ScalarProperty Name="DescripcionProyecto" ColumnName="DescripcionProyecto" />
+          <ScalarProperty Name="FechaIngresoProyecto" ColumnName="FechaIngresoProyecto" />
+          <ScalarProperty Name="FechaTerminoProyecto" ColumnName="FechaTerminoProyecto" />
+          <ScalarProperty Name="ValorProyecto" ColumnName="ValorProyecto" />
+          <ScalarProperty Name="HitosProyecto" ColumnName="HitosProyecto" />
+          <ScalarProperty Name="EstadoProyecto" ColumnName="EstadoProyecto" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="JPProyecto" ColumnName="JPProyecto" />
+          <ScalarProperty Name="EmailContacto" ColumnName="EmailContacto" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_informeProyectoTrackingHitos" FunctionName="S4TControlModel.Store.sp_get_informeProyectoTrackingHitos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_informeProyectoTrackingHitos_Result">
+          <ScalarProperty Name="NombreHito" ColumnName="NombreHito" />
+          <ScalarProperty Name="porcentajeHito" ColumnName="porcentajeHito" />
+          <ScalarProperty Name="ValorHito" ColumnName="ValorHito" />
+          <ScalarProperty Name="FechaCumplimientoHito" ColumnName="FechaCumplimientoHito" />
+          <ScalarProperty Name="FECHAMOVIMIENTO" ColumnName="FECHAMOVIMIENTO" />
+          <ScalarProperty Name="OBSMovimiento" ColumnName="OBSMovimiento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListaContactoCombo" FunctionName="S4TControlModel.Store.sp_get_ListaContactoCombo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListaContactoCombo_Result">
+          <ScalarProperty Name="id_Contacto" ColumnName="id_Contacto" />
+          <ScalarProperty Name="NombreContacto" ColumnName="NombreContacto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_listadoAsistencia" FunctionName="S4TControlModel.Store.sp_get_listadoAsistencia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_listadoAsistencia_Result">
+          <ScalarProperty Name="idRegistro" ColumnName="idRegistro" />
+          <ScalarProperty Name="TipoRegistro" ColumnName="TipoRegistro" />
+          <ScalarProperty Name="HoraRegistro" ColumnName="HoraRegistro" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoCargasFamiliares" FunctionName="S4TControlModel.Store.sp_get_ListadoCargasFamiliares">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoCargasFamiliares_Result">
+          <ScalarProperty Name="ID_CARGASPERSONA" ColumnName="ID_CARGASPERSONA" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRECARGA" ColumnName="NOMBRECARGA" />
+          <ScalarProperty Name="PARENTESCO" ColumnName="PARENTESCO" />
+          <ScalarProperty Name="FECHANACIMIENTOCARGA" ColumnName="FECHANACIMIENTOCARGA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_listadoClientes" FunctionName="S4TControlModel.Store.sp_get_listadoClientes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_listadoClientes_Result">
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Giro" ColumnName="Giro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_listadoContactos" FunctionName="S4TControlModel.Store.sp_get_listadoContactos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_listadoContactos_Result">
+          <ScalarProperty Name="id_Contacto" ColumnName="id_Contacto" />
+          <ScalarProperty Name="NombreContacto" ColumnName="NombreContacto" />
+          <ScalarProperty Name="EmailContacto" ColumnName="EmailContacto" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_listadoContactosCliente" FunctionName="S4TControlModel.Store.sp_get_listadoContactosCliente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_listadoContactosCliente_Result">
+          <ScalarProperty Name="id_Contacto" ColumnName="id_Contacto" />
+          <ScalarProperty Name="NombreContacto" ColumnName="NombreContacto" />
+          <ScalarProperty Name="EmailContacto" ColumnName="EmailContacto" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoDetalleActividades" FunctionName="S4TControlModel.Store.sp_get_ListadoDetalleActividades">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoDetalleActividades_Result">
+          <ScalarProperty Name="id_RegistroTarea" ColumnName="id_RegistroTarea" />
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+          <ScalarProperty Name="HHRegistro" ColumnName="HHRegistro" />
+          <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="DescripcionRegistro" ColumnName="DescripcionRegistro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoPersonas" FunctionName="S4TControlModel.Store.sp_get_ListadoPersonas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoPersonas_Result">
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="CARGO" ColumnName="CARGO" />
+          <ScalarProperty Name="FECHANACIMIENTO" ColumnName="FECHANACIMIENTO" />
+          <ScalarProperty Name="PAISNACIMIENTO" ColumnName="PAISNACIMIENTO" />
+          <ScalarProperty Name="CIUDADNACIMIENTO" ColumnName="CIUDADNACIMIENTO" />
+          <ScalarProperty Name="COMUNANACIMIENTO" ColumnName="COMUNANACIMIENTO" />
+          <ScalarProperty Name="ISAPREFONASA" ColumnName="ISAPREFONASA" />
+          <ScalarProperty Name="AFP" ColumnName="AFP" />
+          <ScalarProperty Name="TELEFONOPARTICULAR" ColumnName="TELEFONOPARTICULAR" />
+          <ScalarProperty Name="TELEFONOCELULAR" ColumnName="TELEFONOCELULAR" />
+          <ScalarProperty Name="CORREOELECTRONICO" ColumnName="CORREOELECTRONICO" />
+          <ScalarProperty Name="ID_ESTADOCIVIL" ColumnName="ID_ESTADOCIVIL" />
+          <ScalarProperty Name="ID_TIPOPERSONA" ColumnName="ID_TIPOPERSONA" />
+          <ScalarProperty Name="EstadoCivil" ColumnName="EstadoCivil" />
+          <ScalarProperty Name="TipoPersona" ColumnName="TipoPersona" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_listadoProveedores" FunctionName="S4TControlModel.Store.sp_get_listadoProveedores">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_listadoProveedores_Result">
+          <ScalarProperty Name="id_Proveedor" ColumnName="id_Proveedor" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Giro" ColumnName="Giro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoProyectos" FunctionName="S4TControlModel.Store.sp_get_ListadoProyectos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoProyectos_Result">
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="NombreProyecto" ColumnName="NombreProyecto" />
+          <ScalarProperty Name="DescripcionProyecto" ColumnName="DescripcionProyecto" />
+          <ScalarProperty Name="idjp" ColumnName="idjp" />
+          <ScalarProperty Name="NombreContacto" ColumnName="NombreContacto" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="FechaTerminoProyecto" ColumnName="FechaTerminoProyecto" />
+          <ScalarProperty Name="HitosProyecto" ColumnName="HitosProyecto" />
+          <ScalarProperty Name="ValorProyecto" ColumnName="ValorProyecto" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="id_Proveedor" ColumnName="id_Proveedor" />
+          <ScalarProperty Name="Proveedor" ColumnName="Proveedor" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoRecursosPorProyecto" FunctionName="S4TControlModel.Store.sp_get_ListadoRecursosPorProyecto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoRecursosPorProyecto_Result">
+          <ScalarProperty Name="ID_DATOSPROYECTO" ColumnName="ID_DATOSPROYECTO" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="ID_PROYECTO" ColumnName="ID_PROYECTO" />
+          <ScalarProperty Name="FECHAASIGNACIONPROYECTO" ColumnName="FECHAASIGNACIONPROYECTO" />
+          <ScalarProperty Name="PORCENTAJEASIGNACION" ColumnName="PORCENTAJEASIGNACION" />
+          <ScalarProperty Name="ValorHH" ColumnName="ValorHH" />
+          <ScalarProperty Name="VALORASIGNACION" ColumnName="VALORASIGNACION" />
+          <ScalarProperty Name="CARGOASIGNADO" ColumnName="CARGOASIGNADO" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoTareasProyecto" FunctionName="S4TControlModel.Store.sp_get_ListadoTareasProyecto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoTareasProyecto_Result">
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+          <ScalarProperty Name="NombreTarea" ColumnName="NombreTarea" />
+          <ScalarProperty Name="DescripcionTarea" ColumnName="DescripcionTarea" />
+          <ScalarProperty Name="HH_Tarea" ColumnName="HH_Tarea" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoTareasxRecurso" FunctionName="S4TControlModel.Store.sp_get_ListadoTareasxRecurso">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoTareasxRecurso_Result">
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+          <ScalarProperty Name="NombreTarea" ColumnName="NombreTarea" />
+          <ScalarProperty Name="DescripcionTarea" ColumnName="DescripcionTarea" />
+          <ScalarProperty Name="HH_Tarea" ColumnName="HH_Tarea" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoTipoPersona" FunctionName="S4TControlModel.Store.sp_get_ListadoTipoPersona">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoTipoPersona_Result">
+          <ScalarProperty Name="ID_TIPOPERSONA" ColumnName="ID_TIPOPERSONA" />
+          <ScalarProperty Name="NOMBRETIPO" ColumnName="NOMBRETIPO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_listadoUsuarios" FunctionName="S4TControlModel.Store.sp_get_listadoUsuarios">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_listadoUsuarios_Result">
+          <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombrePerfil" ColumnName="NombrePerfil" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListadoVacacionesPersona" FunctionName="S4TControlModel.Store.sp_get_ListadoVacacionesPersona">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListadoVacacionesPersona_Result">
+          <ScalarProperty Name="ID_VACACIONES" ColumnName="ID_VACACIONES" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="Fechafin" ColumnName="Fechafin" />
+          <ScalarProperty Name="DIASSOLICITADOS" ColumnName="DIASSOLICITADOS" />
+          <ScalarProperty Name="FechaSolicitud" ColumnName="FechaSolicitud" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListaEstadoCivil" FunctionName="S4TControlModel.Store.sp_get_ListaEstadoCivil">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListaEstadoCivil_Result">
+          <ScalarProperty Name="ID_ESTADOCIVIL" ColumnName="ID_ESTADOCIVIL" />
+          <ScalarProperty Name="NOMBREESTADO" ColumnName="NOMBREESTADO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ListaEstados" FunctionName="S4TControlModel.Store.sp_get_ListaEstados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_ListaEstados_Result">
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GET_MENU" FunctionName="S4TControlModel.Store.SP_GET_MENU">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.SP_GET_MENU_Result">
+          <ScalarProperty Name="id_Menu" ColumnName="id_Menu" />
+          <ScalarProperty Name="NombreMenu" ColumnName="NombreMenu" />
+          <ScalarProperty Name="Pagina" ColumnName="Pagina" />
+          <ScalarProperty Name="Descripción" ColumnName="Descripción" />
+          <ScalarProperty Name="NombreModulo" ColumnName="NombreModulo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_misProyectos" FunctionName="S4TControlModel.Store.sp_get_misProyectos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_misProyectos_Result">
+          <ScalarProperty Name="ID_DATOSPROYECTO" ColumnName="ID_DATOSPROYECTO" />
+          <ScalarProperty Name="ID_PROYECTO" ColumnName="ID_PROYECTO" />
+          <ScalarProperty Name="NombreProyecto" ColumnName="NombreProyecto" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="CARGOASIGNADO" ColumnName="CARGOASIGNADO" />
+          <ScalarProperty Name="DescripcionCargo" ColumnName="DescripcionCargo" />
+          <ScalarProperty Name="FECHAASIGNACIONPROYECTO" ColumnName="FECHAASIGNACIONPROYECTO" />
+          <ScalarProperty Name="DescripcionProyecto" ColumnName="DescripcionProyecto" />
+          <ScalarProperty Name="FechaTerminoProyecto" ColumnName="FechaTerminoProyecto" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="HHAsignadas" ColumnName="HHAsignadas" />
+          <ScalarProperty Name="VALORASIGNACION" ColumnName="VALORASIGNACION" />
+          <ScalarProperty Name="FechaTerminoAsignacion" ColumnName="FechaTerminoAsignacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_perfil_cargacombo" FunctionName="S4TControlModel.Store.sp_get_perfil_cargacombo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_perfil_cargacombo_Result">
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="NombrePerfil" ColumnName="NombrePerfil" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GET_USUARIO" FunctionName="S4TControlModel.Store.SP_GET_USUARIO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.SP_GET_USUARIO_Result">
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="CARGO" ColumnName="CARGO" />
+          <ScalarProperty Name="FECHANACIMIENTO" ColumnName="FECHANACIMIENTO" />
+          <ScalarProperty Name="PAISNACIMIENTO" ColumnName="PAISNACIMIENTO" />
+          <ScalarProperty Name="CIUDADNACIMIENTO" ColumnName="CIUDADNACIMIENTO" />
+          <ScalarProperty Name="COMUNANACIMIENTO" ColumnName="COMUNANACIMIENTO" />
+          <ScalarProperty Name="ISAPREFONASA" ColumnName="ISAPREFONASA" />
+          <ScalarProperty Name="AFP" ColumnName="AFP" />
+          <ScalarProperty Name="TELEFONOPARTICULAR" ColumnName="TELEFONOPARTICULAR" />
+          <ScalarProperty Name="TELEFONOCELULAR" ColumnName="TELEFONOCELULAR" />
+          <ScalarProperty Name="CORREOELECTRONICO" ColumnName="CORREOELECTRONICO" />
+          <ScalarProperty Name="ID_ESTADOCIVIL" ColumnName="ID_ESTADOCIVIL" />
+          <ScalarProperty Name="ID_TIPOPERSONA" ColumnName="ID_TIPOPERSONA" />
+          <ScalarProperty Name="FECHAINGRESO" ColumnName="FECHAINGRESO" />
+          <ScalarProperty Name="FECHACONTRATO" ColumnName="FECHACONTRATO" />
+          <ScalarProperty Name="ValorCotizacionIsapre" ColumnName="ValorCotizacionIsapre" />
+          <ScalarProperty Name="ValorGesIsapre" ColumnName="ValorGesIsapre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="RutEmpresa" ColumnName="RutEmpresa" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="direccionEmpresa" ColumnName="direccionEmpresa" />
+          <ScalarProperty Name="fonoEmpresa" ColumnName="fonoEmpresa" />
+          <ScalarProperty Name="urlLogo" ColumnName="urlLogo" />
+          <ScalarProperty Name="Activo1" ColumnName="Activo1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_VacacionesxID" FunctionName="S4TControlModel.Store.sp_get_VacacionesxID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_get_VacacionesxID_Result">
+          <ScalarProperty Name="ID_VACACIONES" ColumnName="ID_VACACIONES" />
+          <ScalarProperty Name="ID_DATOSPERSONALES" ColumnName="ID_DATOSPERSONALES" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="Fechafin" ColumnName="Fechafin" />
+          <ScalarProperty Name="FechaSolicitud" ColumnName="FechaSolicitud" />
+          <ScalarProperty Name="DIASSOLICITADOS" ColumnName="DIASSOLICITADOS" />
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_get_ValidaAsignacionxProyecto" FunctionName="S4TControlModel.Store.sp_get_ValidaAsignacionxProyecto" />
+    <FunctionImportMapping FunctionImportName="sp_get_VerificaEmpresa" FunctionName="S4TControlModel.Store.sp_get_VerificaEmpresa" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="S4TControlModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="S4TControlModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="S4TControlModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="S4TControlModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_set_CreacionEdicionCargo" FunctionName="S4TControlModel.Store.sp_set_CreacionEdicionCargo" />
+    <FunctionImportMapping FunctionImportName="sp_set_creausuarios" FunctionName="S4TControlModel.Store.sp_set_creausuarios" />
+    <FunctionImportMapping FunctionImportName="sp_set_EditaHitoProyecto" FunctionName="S4TControlModel.Store.sp_set_EditaHitoProyecto" />
+    <FunctionImportMapping FunctionImportName="sp_set_GrabaDetalleActividades" FunctionName="S4TControlModel.Store.sp_set_GrabaDetalleActividades" />
+    <FunctionImportMapping FunctionImportName="sp_set_GrabaProveedor" FunctionName="S4TControlModel.Store.sp_set_GrabaProveedor" />
+    <FunctionImportMapping FunctionImportName="sp_set_GrabaProyecto" FunctionName="S4TControlModel.Store.sp_set_GrabaProyecto" />
+    <FunctionImportMapping FunctionImportName="sp_set_InactivaPersona" FunctionName="S4TControlModel.Store.sp_set_InactivaPersona" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertaCargaFamiliarPersona" FunctionName="S4TControlModel.Store.sp_set_InsertaCargaFamiliarPersona" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertaCliente" FunctionName="S4TControlModel.Store.sp_set_InsertaCliente" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertaconyugePersona" FunctionName="S4TControlModel.Store.sp_set_InsertaconyugePersona" />
+    <FunctionImportMapping FunctionImportName="sp_set_insertaDatosEmergencia" FunctionName="S4TControlModel.Store.sp_set_insertaDatosEmergencia" />
+    <FunctionImportMapping FunctionImportName="sp_set_insertaDatosPersonalesPersona" FunctionName="S4TControlModel.Store.sp_set_insertaDatosPersonalesPersona" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertaDireccionPersona" FunctionName="S4TControlModel.Store.sp_set_InsertaDireccionPersona" />
+    <FunctionImportMapping FunctionImportName="sp_set_insertaHitoProyecto" FunctionName="S4TControlModel.Store.sp_set_insertaHitoProyecto" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertaRecursoaProyecto" FunctionName="S4TControlModel.Store.sp_set_InsertaRecursoaProyecto" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertaRegistroAsistencia" FunctionName="S4TControlModel.Store.sp_set_InsertaRegistroAsistencia" />
+    <FunctionImportMapping FunctionImportName="sp_set_insertaSolicitudVacaciones" FunctionName="S4TControlModel.Store.sp_set_insertaSolicitudVacaciones" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertaTareasProyecto" FunctionName="S4TControlModel.Store.sp_set_InsertaTareasProyecto" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertContactoCliente" FunctionName="S4TControlModel.Store.sp_set_InsertContactoCliente" />
+    <FunctionImportMapping FunctionImportName="sp_set_InsertContactoProveedor" FunctionName="S4TControlModel.Store.sp_set_InsertContactoProveedor" />
+    <FunctionImportMapping FunctionImportName="sp_set_RegistroEmpresa" FunctionName="S4TControlModel.Store.sp_set_RegistroEmpresa" />
+    <FunctionImportMapping FunctionImportName="sp_set_UpdateContacto" FunctionName="S4TControlModel.Store.sp_set_UpdateContacto" />
+    <FunctionImportMapping FunctionImportName="sp_set_UpdateEmpresa" FunctionName="S4TControlModel.Store.sp_set_UpdateEmpresa" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="S4TControlModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

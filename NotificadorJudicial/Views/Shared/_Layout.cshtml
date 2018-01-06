@@ -1,0 +1,165 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="~/images/justice-128x128-128x128.png" type="image/x-icon">
+    <title>@ViewBag.Title | Produce Software Ltda.</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body class="nav-md">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyDszu0zZXaPKl_66jV2EJN7UIX-OaL-VoM" type="text/javascript"></script>
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    @*<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/mapdata/index.js?1"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/cl/cl-all.js"></script>*@
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="~/images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Bienvenido,</span>
+                            <h2>René Quiroz</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    @*@using NotificadorJudicial.Helper
+                    @Html.Menu()*@
+                    
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>Mi Menú</h3>
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a><i class="fa fa-home"></i> Inicio <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li>@Html.ActionLink("Mi Dasboard", "Index", "Home")</li>
+                                        <li>@Html.ActionLink("Mi Perfil", "MiPerfil", "Home")</li>
+                                        
+                                        <li>@Html.ActionLink("Mis Encargos", "MisEncargos", "Home")</li>
+                                        
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-edit"></i> Mis Trámites <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                        <li>@Html.ActionLink("Mis Trámites", "testLista", "Home")</li>
+                                        <li><a href="#">Tracking</a></li>
+                                        <li><a href="#">Informes</a></li>
+                                        <li><a href="#">Valores</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-desktop"></i> Mis Causas <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Gestión</a></li>
+                                        <li><a href="#">Tareas</a></li>
+                                        <li><a href="#">Encargos</a></li>
+                                        <li><a href="#">Reportes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-table"></i> Informes <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Gestión</a></li>
+                                        <li><a href="#">Encargos</a></li>
+                                        <li><a href="#">Tramites</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-university"></i> Administración <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li>@Html.ActionLink("Mis Clientes", "MisClientes", "Home")</li>
+                                        <li><a href="#">Tramites</a></li>
+                                        <li><a href="#">Valores</a></li>
+                                        <li><a href="#">Datos</a></li>
+                                        <li><a href="#">Usuarios</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Administración">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="#">
+                            @*<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>*@
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="#">
+                            @*<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>*@
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Cierre de Sesión" href="@Url.Action("Index","Public")">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="~/images/img.jpg" alt="">René Quiroz
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>@Html.ActionLink("Perfil", "Index", "Home")</li>
+                                    <li><a href="#">Ayuda</a></li>
+                                    <li> <a href="@Url.Action("Index","Public")" class = "fa fa-sign-out pull-right">Cerrar Sesión</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            @RenderBody()
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    &copy; @DateTime.Now.Year Produce Software Ltda. - Gestión Judicial - Todos los Derechos Reservados registro de propiedad intelectual N°201223256
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

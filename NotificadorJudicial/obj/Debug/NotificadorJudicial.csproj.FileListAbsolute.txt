@@ -1,0 +1,442 @@
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\csc.exe
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Collections.Immutable.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\vbc.exe
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe.config
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll.config
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.pdb
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Web.Infrastructure.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Owin.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\WebGrease.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.pdb
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Helpers.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Mvc.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Optimization.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Razor.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.SqlServer.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Google.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.csprojResolveAssemblyReference.cache
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.dll
+c:\users\s4t\documents\visual studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.pdb
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\csc.exe
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\vbc.exe
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll.config
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.pdb
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Owin.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\WebGrease.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.pdb
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Helpers.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Mvc.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Optimization.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Razor.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.csprojResolveAssemblyReference.cache
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.dll
+C:\Users\René Quiroz\Documents\Visual Studio 2015\Projects\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.pdb
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\csc.exe
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\vbc.exe
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll.config
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.pdb
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Owin.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\WebGrease.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.pdb
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Helpers.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Mvc.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Optimization.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Razor.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.csprojResolveAssemblyReference.cache
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.dll
+C:\Users\reneq\Documents\proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.pdb
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\csc.exe
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\vbc.exe
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll.config
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.pdb
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\log4net.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Owin.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\WebGrease.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.pdb
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Helpers.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Mvc.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Optimization.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Razor.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.dll
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.pdb
+C:\Users\René Quiroz\Documents\Proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.csprojResolveAssemblyReference.cache
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\csc.exe
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Collections.Immutable.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\System.Reflection.Metadata.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\vbc.exe
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\roslyn\VBCSCompiler.exe.config
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll.config
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\NotificadorJudicial.pdb
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\log4net.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Owin.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\WebGrease.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Helpers.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Mvc.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Optimization.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.Razor.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Deployment.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\System.Web.WebPages.Razor.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Antlr3.Runtime.pdb
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Newtonsoft.Json.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\EntityFramework.SqlServer.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Google.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Helpers.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Mvc.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Optimization.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.Razor.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.csprojResolveAssemblyReference.cache
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.dll
+C:\Proyectos\NotificadorJudicial\NotificadorJudicial\obj\Debug\NotificadorJudicial.pdb

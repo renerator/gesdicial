@@ -1,0 +1,366 @@
+﻿
+@{
+    ViewBag.Title = "Mi Perfil";
+}
+
+<script src="~/WebJs/HomeJs/MiPerfil.js"></script>
+<div class="right_col" role="main">
+    <div class="">
+        <!--Titulo y barra de búsqueda-->
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Mi Perfil</h3>
+            </div>
+
+            <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Búsqueda..." />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Ir</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <!--Fin titulo-->
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Mi información personal<small>Actividades, encargos, mis datos personales y gráficos de información.</small></h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li>
+                                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#">Filtro 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">filtro 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                    <div class="x_content">
+                        <!--Contenido Lateral Derecho-->
+                        <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
+                            <div class="profile_img">
+                                <div id="crop-avatar">
+                                    <!-- Current avatar -->
+                                    <img class="img-responsive avatar-view" src="~/images/img.jpg" alt="Mi imagen" title="Mi perfil">
+                                </div>
+                            </div>
+                            <h3>René Quiroz</h3>
+
+                            <ul class="list-unstyled user_data">
+                                <li>
+                                    <i class="fa fa-map-marker user-profile-icon"></i> Celia Zegers 128 dept. 301 - La Cisterna
+                                </li>
+
+                                <li>
+                                    <i class="fa fa-briefcase user-profile-icon"></i> Contralor General
+                                </li>
+
+                                <li class="m-top-xs">
+                                    <i class="fa fa-external-link user-profile-icon"></i>
+                                    <a href="http://www.producesoftware.cl" target="_blank">www.producesoftware.cl</a>
+                                </li>
+                            </ul>
+
+                            <br/>
+
+                            <!-- start skills -->
+                            <h4>Mi Ranking</h4>
+                            <ul class="list-unstyled user_data">
+                                <li>
+                                    <p>Notificaciones</p>
+                                    <div class="progress progress_sm">
+                                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="85"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Embargos</p>
+                                    <div class="progress progress_sm">
+                                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Toma de Testigos</p>
+                                    <div class="progress progress_sm">
+                                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="20"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Inscripciones</p>
+                                    <div class="progress progress_sm">
+                                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="75"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- end of skills -->
+
+                        </div>
+                        <!--Fin Contenido Lateral Derecho-->
+                        <!--Contenido Lateral Izquierdo-->
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div id="contenedor_chartPrimario" style="width:100%; height:280px;"></div>
+                            <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                                <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#tab_graficos" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Mis Gráficos</a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#tab_actividadesRecientes" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Actividades Recientes</a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#tab_encargos" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Encargo por Clientes</a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#tab_DatosPersonales" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Mis Datos Personales</a>
+                                    </li>
+                                    
+                                </ul>
+                                <div id="myTabContent" class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade" id="tab_actividadesRecientes" aria-labelledby="home-tab">
+                                        <ul class="messages">
+                                            <li>
+                                                <img src="~/images/img.jpg" class="avatar" alt="Avatar">
+                                                <div class="message_date">
+                                                    <h3 class="date text-info">24</h3>
+                                                    <p class="month">Mayo</p>
+                                                </div>
+                                                <div class="message_wrapper">
+                                                    <h4 class="heading">Abogado 1</h4>
+                                                    <blockquote class="message">Encargo de Notificación Causa 12345-88556-UA</blockquote>
+                                                    <br />
+                                                    <p class="url">
+                                                        <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                                        <a href="#" data-original-title=""> Ver detalle </a>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="~/images/img.jpg" class="avatar" alt="Avatar">
+                                                <div class="message_date">
+                                                    <h3 class="date text-error">21</h3>
+                                                    <p class="month">Mayo</p>
+                                                </div>
+                                                <div class="message_wrapper">
+                                                    <h4 class="heading">Abogado 2</h4>
+                                                    <blockquote class="message">Notificación de causa y embargo segun rol 213323-56266-AUI</blockquote>
+                                                    <br />
+                                                    <p class="url">
+                                                        <span class="fs1" aria-hidden="true" data-icon=""></span>
+                                                        <a href="#" data-original-title="">Ver detalle</a>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="~/images/img.jpg" class="avatar" alt="Avatar">
+                                                <div class="message_date">
+                                                    <h3 class="date text-info">24</h3>
+                                                    <p class="month">Marzo</p>
+                                                </div>
+                                                <div class="message_wrapper">
+                                                    <h4 class="heading">Abogado 3</h4>
+                                                    <blockquote class="message">Validacion de toma de registro en causa 1225566-2263322 según juzgado local de santiago.</blockquote>
+                                                    <br />
+                                                    <p class="url">
+                                                        <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                                        <a href="#" data-original-title="">Ver detalle </a>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="~/images/img.jpg" class="avatar" alt="Avatar">
+                                                <div class="message_date">
+                                                    <h3 class="date text-error">05</h3>
+                                                    <p class="month">Febrero</p>
+                                                </div>
+                                                <div class="message_wrapper">
+                                                    <h4 class="heading">Abogado 4</h4>
+                                                    <blockquote class="message">Realizar visita y toma de testigos causa rol: 12546-5689-EX</blockquote>
+                                                    <br />
+                                                    <p class="url">
+                                                        <span class="fs1" aria-hidden="true" data-icon=""></span>
+                                                        <a href="#" data-original-title="">Ver detalle</a>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab_encargos" aria-labelledby="profile-tab">
+                                        <table class="data table table-striped no-margin">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Causa</th>
+                                                    <th>Cliente</th>
+                                                    <th class="hidden-phone">Prioridad</th>
+                                                    <th>Estado Avance</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Causa 12556-44566-UI</td>
+                                                    <td>Abogado 1</td>
+                                                    <td class="hidden-phone">Inmediata</td>
+                                                    <td class="vertical-align-mid">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress-bar-success" data-transitiongoal="35"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Causa 12556-44566-A45</td>
+                                                    <td>Abogado 2</td>
+                                                    <td class="hidden-phone">Normal</td>
+                                                    <td class="vertical-align-mid">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress-bar-danger" data-transitiongoal="15"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Causa 12556-44566-45</td>
+                                                    <td>Abogado 3</td>
+                                                    <td class="hidden-phone">Media</td>
+                                                    <td class="vertical-align-mid">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress-bar-success" data-transitiongoal="45"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Causa 12556-44566-UI-5698</td>
+                                                    <td>Abogado 4</td>
+                                                    <td class="hidden-phone">Normal</td>
+                                                    <td class="vertical-align-mid">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress-bar-success" data-transitiongoal="75"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab_DatosPersonales" aria-labelledby="profile-tab">
+                                        <h2>Mis Datos Personales <small></small></h2>
+                                        <form class="form-horizontal form-label-left">
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre:</label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <input type="text" class="form-control" placeholder="Default Input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Rut:</label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <input type="text" class="form-control" readonly="readonly" placeholder="Read-Only Input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Password</label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <input type="password" class="form-control" value="passwordonetwo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Dirección:</label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <input type="text" class="form-control" placeholder="Dirección">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Email:</label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <input type="email" class="form-control" placeholder="Ingresa tu Email">
+                                                </div>
+                                            </div>
+                                            <div class="ln_solid"></div>
+                                            <div class="form-group">
+                                                <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                                                    <button type="button" class="btn btn-primary">Cancelar</button>
+                                                    <button type="reset" class="btn btn-primary">Resetear</button>
+                                                    <button type="button" class="btn btn-primary" onclick="javascript:enviar();">Guardar</button>
+                                                    @*<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" onclick="javascript:enviar();">Guardar</button>*@
+                                                    
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <br />
+                                        <div id="resultado"></div>
+                                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h4>Text in a modal</h4>
+                                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade active in" id="tab_graficos" aria-labelledby="profile-tab">
+                                        <h2>Mis Gráficos de información <small></small></h2>
+                                        <table>
+                                            <tr>
+                                                <td colspan="8">
+                                                    <div id="contenedor_chart"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="8">
+                                                    <div id="contenedor_chart2"></div>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td colspan="8">
+                                                    <div id="contenedor_chart3"></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin Contenido Lateral Izquierdo-->
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

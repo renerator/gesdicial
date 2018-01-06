@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="S4TControlModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CARGASPERSONA">
+    <Key>
+      <PropertyRef Name="ID_CARGASPERSONA" />
+    </Key>
+    <Property Name="ID_CARGASPERSONA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_DATOSPERSONALES" Type="int" />
+    <Property Name="NOMBRECARGA" Type="varchar" MaxLength="300" />
+    <Property Name="PARENTESCO" Type="varchar" MaxLength="150" />
+    <Property Name="FECHANACIMIENTOCARGA" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="Cargos">
+    <Key>
+      <PropertyRef Name="id_Cargo" />
+    </Key>
+    <Property Name="id_Cargo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idEmpresa" Type="int" />
+    <Property Name="NombreCargo" Type="varchar" MaxLength="300" />
+    <Property Name="DescripcionCargo" Type="varchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="id_Cliente" />
+    </Key>
+    <Property Name="id_Cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idEmpresa" Type="int" />
+    <Property Name="RazonSocial" Type="varchar" MaxLength="300" />
+    <Property Name="Rut" Type="varchar" MaxLength="15" />
+    <Property Name="Direccion" Type="varchar" MaxLength="500" />
+    <Property Name="Telefono" Type="varchar" MaxLength="30" />
+    <Property Name="Giro" Type="varchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="Contactos">
+    <Key>
+      <PropertyRef Name="id_Contacto" />
+    </Key>
+    <Property Name="id_Contacto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreContacto" Type="varchar" MaxLength="200" />
+    <Property Name="EmailContacto" Type="varchar" MaxLength="150" />
+    <Property Name="Celular" Type="varchar" MaxLength="50" />
+    <Property Name="Skype" Type="varchar" MaxLength="150" />
+    <Property Name="EsCliente" Type="bit" />
+    <Property Name="id_Cliente" Type="int" />
+    <Property Name="id_Proveedor" Type="int" />
+  </EntityType>
+  <EntityType Name="ControlHITO">
+    <Key>
+      <PropertyRef Name="id_Control" />
+    </Key>
+    <Property Name="id_Control" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_hito" Type="int" />
+    <Property Name="ocCliente" Type="varchar" MaxLength="30" />
+    <Property Name="ocProveedor" Type="varchar" MaxLength="30" />
+    <Property Name="FacturaCliente" Type="varchar" MaxLength="30" />
+    <Property Name="FacturaProveedor" Type="varchar" MaxLength="30" />
+    <Property Name="Boleta" Type="varchar" MaxLength="30" />
+    <Property Name="FechaEmisionOC" Type="datetime" />
+    <Property Name="FechaEmisionFactura" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DATOSCONYUGE">
+    <Key>
+      <PropertyRef Name="ID_DATOSCONYUGE" />
+    </Key>
+    <Property Name="ID_DATOSCONYUGE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_DATOSPERSONALES" Type="int" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="500" />
+    <Property Name="FECHANACIMIENTOCONYUGE" Type="varchar" MaxLength="15" />
+    <Property Name="LUGARTRABAJOCONYUGE" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="DATOSEMERGENCIAPERSONA">
+    <Key>
+      <PropertyRef Name="ID_DATOSEMERGENCIA" />
+    </Key>
+    <Property Name="ID_DATOSEMERGENCIA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_DATOSPERSONALES" Type="int" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="300" />
+    <Property Name="PARENTESCO" Type="varchar" MaxLength="300" />
+    <Property Name="TELEFONOEMERGENCIA" Type="varchar" MaxLength="30" />
+    <Property Name="NOMBREINSTITUCIONMEDICA" Type="varchar" MaxLength="300" />
+    <Property Name="NUMEROEMERGENCIAMEDICA" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="DATOSPERSONALES">
+    <Key>
+      <PropertyRef Name="ID_DATOSPERSONALES" />
+    </Key>
+    <Property Name="ID_DATOSPERSONALES" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idEmpresa" Type="int" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="300" />
+    <Property Name="RUT" Type="varchar" MaxLength="12" />
+    <Property Name="CARGO" Type="varchar" MaxLength="150" />
+    <Property Name="FECHANACIMIENTO" Type="varchar" MaxLength="15" />
+    <Property Name="PAISNACIMIENTO" Type="varchar" MaxLength="100" />
+    <Property Name="CIUDADNACIMIENTO" Type="varchar" MaxLength="100" />
+    <Property Name="COMUNANACIMIENTO" Type="varchar" MaxLength="100" />
+    <Property Name="ISAPREFONASA" Type="varchar" MaxLength="300" />
+    <Property Name="AFP" Type="varchar" MaxLength="300" />
+    <Property Name="TELEFONOPARTICULAR" Type="varchar" MaxLength="150" />
+    <Property Name="TELEFONOCELULAR" Type="varchar" MaxLength="30" />
+    <Property Name="CORREOELECTRONICO" Type="varchar" MaxLength="150" />
+    <Property Name="ID_ESTADOCIVIL" Type="int" />
+    <Property Name="ID_TIPOPERSONA" Type="int" />
+    <Property Name="FECHAINGRESO" Type="varchar" MaxLength="30" />
+    <Property Name="FECHACONTRATO" Type="varchar" MaxLength="30" />
+    <Property Name="ValorCotizacionIsapre" Type="float" />
+    <Property Name="ValorGesIsapre" Type="float" />
+    <Property Name="Activo" Type="bit" />
+    <Property Name="id_Perfil" Type="int" />
+    <Property Name="Password" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DATOSPERSONAPROYECTO">
+    <Key>
+      <PropertyRef Name="ID_DATOSPROYECTO" />
+    </Key>
+    <Property Name="ID_DATOSPROYECTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_DATOSPERSONALES" Type="int" />
+    <Property Name="ID_PROYECTO" Type="int" />
+    <Property Name="id_Cargo" Type="int" />
+    <Property Name="FECHAASIGNACIONPROYECTO" Type="varchar" MaxLength="15" />
+    <Property Name="PORCENTAJEASIGNACION" Type="float" />
+    <Property Name="VALORASIGNACION" Type="float" />
+    <Property Name="CARGOASIGNADO" Type="varchar" MaxLength="150" />
+    <Property Name="COMENTARIOS" Type="varchar" MaxLength="3000" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DIRECCIONPERSONA">
+    <Key>
+      <PropertyRef Name="ID_DIRECCION" />
+    </Key>
+    <Property Name="ID_DIRECCION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_DATOSPERSONALES" Type="int" />
+    <Property Name="DIRECCION" Type="varchar" MaxLength="1000" />
+    <Property Name="COMUNA" Type="varchar" MaxLength="100" />
+    <Property Name="TELEFONO" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EMPRESAS">
+    <Key>
+      <PropertyRef Name="idEmpresa" />
+    </Key>
+    <Property Name="idEmpresa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RutEmpresa" Type="varchar" MaxLength="15" />
+    <Property Name="RazonSocial" Type="varchar" MaxLength="150" />
+    <Property Name="direccionEmpresa" Type="varchar" MaxLength="300" />
+    <Property Name="fonoEmpresa" Type="varchar" MaxLength="30" />
+    <Property Name="urlLogo" Type="varchar" MaxLength="300" />
+    <Property Name="Activo" Type="bit" />
+  </EntityType>
+  <EntityType Name="ESTADOCIVIL">
+    <Key>
+      <PropertyRef Name="ID_ESTADOCIVIL" />
+    </Key>
+    <Property Name="ID_ESTADOCIVIL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBREESTADO" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'S4TControl.dbo.Estados' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Estados">
+    <Key>
+      <PropertyRef Name="id_Estado" />
+    </Key>
+    <Property Name="id_Estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreEstado" Type="varchar" MaxLength="50" />
+    <Property Name="Activo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Hitos">
+    <Key>
+      <PropertyRef Name="id_Hito" />
+    </Key>
+    <Property Name="id_Hito" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Proyecto" Type="int" Nullable="false" />
+    <Property Name="NombreHito" Type="varchar" MaxLength="50" />
+    <Property Name="DescripcionHito" Type="varchar" MaxLength="300" />
+    <Property Name="porcentajeHito" Type="float" />
+    <Property Name="ValorHito" Type="float" />
+    <Property Name="FechaHito" Type="datetime" />
+    <Property Name="FechaCumplimientoHito" Type="varchar" MaxLength="30" />
+    <Property Name="FechaVencimientoHito" Type="varchar" MaxLength="30" />
+    <Property Name="id_Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="LogControl">
+    <Key>
+      <PropertyRef Name="id_Log" />
+    </Key>
+    <Property Name="id_Log" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tabla" Type="varchar" MaxLength="50" />
+    <Property Name="Dato" Type="varchar" MaxLength="50" />
+    <Property Name="idDato" Type="int" />
+    <Property Name="fechaCreacion" Type="datetime" />
+    <Property Name="usuario" Type="varchar" MaxLength="50" />
+    <Property Name="Modulo" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="id_Menu" />
+    </Key>
+    <Property Name="id_Menu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreMenu" Type="varchar" MaxLength="50" />
+    <Property Name="Pagina" Type="varchar" MaxLength="300" />
+    <Property Name="id_Perfil" Type="int" />
+    <Property Name="Descripción" Type="varchar" MaxLength="150" />
+    <Property Name="NombreModulo" Type="varchar" MaxLength="150" />
+    <Property Name="Activo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="id_Perfil" />
+    </Key>
+    <Property Name="id_Perfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombrePerfil" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Proveedores">
+    <Key>
+      <PropertyRef Name="id_Proveedor" />
+    </Key>
+    <Property Name="id_Proveedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idEmpresa" Type="int" />
+    <Property Name="RazonSocial" Type="varchar" MaxLength="100" />
+    <Property Name="Rut" Type="varchar" MaxLength="15" />
+    <Property Name="Direccion" Type="varchar" MaxLength="300" />
+    <Property Name="Telefono" Type="varchar" MaxLength="30" />
+    <Property Name="Giro" Type="varchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="Proyectos">
+    <Key>
+      <PropertyRef Name="id_Proyecto" />
+    </Key>
+    <Property Name="id_Proyecto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idEmpresa" Type="int" />
+    <Property Name="NombreProyecto" Type="varchar" MaxLength="300" />
+    <Property Name="DescripcionProyecto" Type="varchar" MaxLength="3000" />
+    <Property Name="FechaIngresoProyecto" Type="datetime" />
+    <Property Name="FechaTerminoProyecto" Type="datetime" />
+    <Property Name="ValorProyecto" Type="varchar" MaxLength="300" />
+    <Property Name="HitosProyecto" Type="int" />
+    <Property Name="id_TipoProveedor" Type="int" />
+    <Property Name="id_Cliente" Type="int" />
+    <Property Name="id_Contacto" Type="int" />
+    <Property Name="id_Proveedor" Type="int" />
+    <Property Name="id_Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="RegistroAsistencia">
+    <Key>
+      <PropertyRef Name="idRegistro" />
+    </Key>
+    <Property Name="idRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoRegistro" Type="varchar" MaxLength="50" />
+    <Property Name="HoraRegistro" Type="datetime" />
+    <Property Name="id_datospersonales" Type="int" />
+  </EntityType>
+  <EntityType Name="RegistroMovimientosHitos">
+    <Key>
+      <PropertyRef Name="id_Registro" />
+    </Key>
+    <Property Name="id_Registro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_hito" Type="int" />
+    <Property Name="FechaIngreso" Type="datetime" />
+    <Property Name="Observaciones" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RegistroTarea">
+    <Key>
+      <PropertyRef Name="id_RegistroTarea" />
+    </Key>
+    <Property Name="id_RegistroTarea" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Tarea" Type="int" />
+    <Property Name="HHRegistro" Type="varchar" MaxLength="50" />
+    <Property Name="FechaRegistro" Type="varchar" MaxLength="50" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" />
+    <Property Name="DescripcionRegistro" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="SOLICITUD_VACACIONES">
+    <Key>
+      <PropertyRef Name="ID_VACACIONES" />
+    </Key>
+    <Property Name="ID_VACACIONES" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_DATOSPERSONALES" Type="int" />
+    <Property Name="FechaInicio" Type="varchar" MaxLength="50" />
+    <Property Name="Fechafin" Type="varchar" MaxLength="50" />
+    <Property Name="FechaSolicitud" Type="datetime" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="id_Estado" Type="int" />
+    <Property Name="Observaciones" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TareaProyecto">
+    <Key>
+      <PropertyRef Name="id_Tarea" />
+    </Key>
+    <Property Name="id_Tarea" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Proyecto" Type="int" />
+    <Property Name="NombreTarea" Type="varchar" MaxLength="150" />
+    <Property Name="DescripcionTarea" Type="varchar(max)" />
+    <Property Name="id_DatosPersonales" Type="int" />
+    <Property Name="FechaIngreso" Type="datetime" />
+    <Property Name="HH_Tarea" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TIPOPERSONA">
+    <Key>
+      <PropertyRef Name="ID_TIPOPERSONA" />
+    </Key>
+    <Property Name="ID_TIPOPERSONA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRETIPO" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'S4TControl.dbo.TipoProveedores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TipoProveedores">
+    <Key>
+      <PropertyRef Name="id_TipoProveedor" />
+    </Key>
+    <Property Name="id_TipoProveedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreTipo" Type="varchar" MaxLength="50" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id_Usuario" />
+    </Key>
+    <Property Name="id_Usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreUsuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="id_Perfil" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ValorHH">
+    <Key>
+      <PropertyRef Name="id_Valor" />
+    </Key>
+    <Property Name="id_Valor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Cargo" Type="int" />
+    <Property Name="Valor" Type="float" />
+    <Property Name="Activo" Type="bit" />
+    <Property Name="FechaValor" Type="datetime" />
+  </EntityType>
+  <Function Name="AntiguedadContractual" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="fechaContrato" Type="date" Mode="In" />
+  </Function>
+  <Function Name="AntiguedadLaboral" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="fechainicio" Type="date" Mode="In" />
+  </Function>
+  <Function Name="DiasLaborales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="FechaInicial" Type="date" Mode="In" />
+    <Parameter Name="FechaFinal" Type="date" Mode="In" />
+  </Function>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_BuscaPersonaxID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_BuscarDatosCargasPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_BuscarDatosEmergenciaPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_buscaRutPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rutPersona" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_cargos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMPRESA" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_cargosAsignadoaProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idCargo" Type="int" Mode="In" />
+    <Parameter Name="idValor" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ComboPersonas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_get_ContadorHitos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_DatosConyugePersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_DatosdeTarea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idTarea" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_DatosDireccionPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_datosEmpresa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idEmpresa" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_DevuelveIDPRoyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NombreProyecto" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_EstadoAmarillo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_get_EstadoRojo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_get_ExisteRutProveedor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rut" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_GraficoHitos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USUARIO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_HitoProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_hitosProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_Proyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_informeProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_informeProyectoTrackingHitos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListaContactoCombo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idCliente" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_listadoAsistencia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_get_ListadoCargasFamiliares" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_listadoClientes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NOMBRECLIENTE" Type="varchar" Mode="In" />
+    <Parameter Name="EMPRESA" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_listadoContactos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDPROVEEDOR" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_listadoContactosCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDCLIENTE" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListadoDetalleActividades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idTarea" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListadoPersonas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idTipoPersonas" Type="int" Mode="In" />
+    <Parameter Name="EMPRESA" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_listadoProveedores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NOMBREPROVEEDOR" Type="varchar" Mode="In" />
+    <Parameter Name="EMPRESA" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListadoProyectos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idCliente" Type="int" Mode="In" />
+    <Parameter Name="idEstado" Type="int" Mode="In" />
+    <Parameter Name="Empresa" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListadoRecursosPorProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+    <Parameter Name="idDatosProyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListadoTareasProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListadoTareasxRecurso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListadoTipoPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_get_listadoUsuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NOMBREUSUARIO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListadoVacacionesPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ListaEstadoCivil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_get_ListaEstados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tipo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GET_MENU" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDPERFIL" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_misProyectos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_perfil_cargacombo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GET_USUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMPRESA" Type="varchar" Mode="In" />
+    <Parameter Name="USUARIO" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_get_VacacionesxID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idVacaciones" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_ValidaAsignacionxProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_get_VerificaEmpresa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rutEmpresa" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_CreacionEdicionCargo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idEmpresa" Type="int" Mode="In" />
+    <Parameter Name="idCargo" Type="int" Mode="In" />
+    <Parameter Name="nombreCargo" Type="varchar" Mode="In" />
+    <Parameter Name="descripcionCargo" Type="varchar" Mode="In" />
+    <Parameter Name="valorCargo" Type="float" Mode="In" />
+  </Function>
+  <Function Name="sp_set_creausuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+    <Parameter Name="contraseña" Type="varchar" Mode="In" />
+    <Parameter Name="perfil" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_set_EditaHitoProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idHito" Type="int" Mode="In" />
+    <Parameter Name="NombreHito" Type="varchar" Mode="In" />
+    <Parameter Name="descripcionHito" Type="varchar" Mode="In" />
+    <Parameter Name="FechaCumplimientoHito" Type="varchar" Mode="In" />
+    <Parameter Name="porcentajeHito" Type="float" Mode="In" />
+    <Parameter Name="idEstado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_set_GrabaDetalleActividades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_tarea" Type="int" Mode="In" />
+    <Parameter Name="hhregistro" Type="varchar" Mode="In" />
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+    <Parameter Name="descripcion" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_set_GrabaProveedor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProveedor" Type="int" Mode="In" />
+    <Parameter Name="RazonSocial" Type="varchar" Mode="In" />
+    <Parameter Name="Rut" Type="varchar" Mode="In" />
+    <Parameter Name="Direccion" Type="varchar" Mode="In" />
+    <Parameter Name="Telefono" Type="varchar" Mode="In" />
+    <Parameter Name="Giro" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_GrabaProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdProyecto" Type="int" Mode="In" />
+    <Parameter Name="NombreProyecto" Type="varchar" Mode="In" />
+    <Parameter Name="descripcionProyecto" Type="varchar" Mode="In" />
+    <Parameter Name="fechaIngreso" Type="varchar" Mode="In" />
+    <Parameter Name="fechaTermino" Type="varchar" Mode="In" />
+    <Parameter Name="valorProyecto" Type="varchar" Mode="In" />
+    <Parameter Name="hitosProyecto" Type="int" Mode="In" />
+    <Parameter Name="idCliente" Type="int" Mode="In" />
+    <Parameter Name="idProveedor" Type="int" Mode="In" />
+    <Parameter Name="idContacto" Type="int" Mode="In" />
+    <Parameter Name="idEmpresa" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InactivaPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertaCargaFamiliarPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_CARGASPERSONA" Type="int" Mode="In" />
+    <Parameter Name="ID_DATOSPERSONALES" Type="int" Mode="In" />
+    <Parameter Name="NOMBRECARGA" Type="varchar" Mode="In" />
+    <Parameter Name="PARENTESCO" Type="varchar" Mode="In" />
+    <Parameter Name="FECHANACIMIENTOCARGA" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertaCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_Cliente" Type="int" Mode="In" />
+    <Parameter Name="RazonSocial" Type="varchar" Mode="In" />
+    <Parameter Name="RutCliente" Type="varchar" Mode="In" />
+    <Parameter Name="giroCliente" Type="varchar" Mode="In" />
+    <Parameter Name="DireccionCliente" Type="varchar" Mode="In" />
+    <Parameter Name="telefonoCliente" Type="varchar" Mode="In" />
+    <Parameter Name="idEmpresa" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertaconyugePersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_DATOSPERSONALES" Type="int" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="FECHANACIMIENTOCONYUGE" Type="varchar" Mode="In" />
+    <Parameter Name="LUGARTRABAJOCONYUGE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_insertaDatosEmergencia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_DATOSPERSONALES" Type="int" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="PARENTESCO" Type="varchar" Mode="In" />
+    <Parameter Name="TELEFONOEMERGENCIA" Type="varchar" Mode="In" />
+    <Parameter Name="NOMBREINSTITUCIONMEDICA" Type="varchar" Mode="In" />
+    <Parameter Name="NUMEROEMERGENCIAMEDICA" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_insertaDatosPersonalesPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idDatosPersonales" Type="int" Mode="In" />
+    <Parameter Name="idEmpresa" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="rut" Type="varchar" Mode="In" />
+    <Parameter Name="cargo" Type="varchar" Mode="In" />
+    <Parameter Name="fechaNacimiento" Type="varchar" Mode="In" />
+    <Parameter Name="paisNacimiento" Type="varchar" Mode="In" />
+    <Parameter Name="ciudadNacimiento" Type="varchar" Mode="In" />
+    <Parameter Name="comunaNacimiento" Type="varchar" Mode="In" />
+    <Parameter Name="isapre" Type="varchar" Mode="In" />
+    <Parameter Name="afp" Type="varchar" Mode="In" />
+    <Parameter Name="telefonoParticular" Type="varchar" Mode="In" />
+    <Parameter Name="telefonoCelular" Type="varchar" Mode="In" />
+    <Parameter Name="correoElectronico" Type="varchar" Mode="In" />
+    <Parameter Name="idEstadoCivil" Type="int" Mode="In" />
+    <Parameter Name="idTipoPersona" Type="int" Mode="In" />
+    <Parameter Name="FechaIngreso" Type="varchar" Mode="In" />
+    <Parameter Name="fechaContrato" Type="varchar" Mode="In" />
+    <Parameter Name="ValorCotizacionIsapre" Type="float" Mode="In" />
+    <Parameter Name="ValorGesIsapre" Type="float" Mode="In" />
+    <Parameter Name="idPerfil" Type="int" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertaDireccionPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_DATOSPERSONALES" Type="int" Mode="In" />
+    <Parameter Name="DIRECCION" Type="varchar" Mode="In" />
+    <Parameter Name="COMUNA" Type="varchar" Mode="In" />
+    <Parameter Name="TELEFONO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_insertaHitoProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+    <Parameter Name="NombreHito" Type="varchar" Mode="In" />
+    <Parameter Name="descripcionHito" Type="varchar" Mode="In" />
+    <Parameter Name="FechaCumplimientoHito" Type="varchar" Mode="In" />
+    <Parameter Name="porcentajeHito" Type="float" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertaRecursoaProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idDatosPersonales" Type="int" Mode="In" />
+    <Parameter Name="idProyecto" Type="int" Mode="In" />
+    <Parameter Name="idCargo" Type="int" Mode="In" />
+    <Parameter Name="idDatosProyecto" Type="int" Mode="In" />
+    <Parameter Name="porcentajeAsignacion" Type="float" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertaRegistroAsistencia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rutPersona" Type="varchar" Mode="In" />
+    <Parameter Name="idEmpresa" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_set_insertaSolicitudVacaciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idVacaciones" Type="int" Mode="In" />
+    <Parameter Name="idPersona" Type="int" Mode="In" />
+    <Parameter Name="idEstado" Type="int" Mode="In" />
+    <Parameter Name="fechaInicio" Type="varchar" Mode="In" />
+    <Parameter Name="fechaFin" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertaTareasProyecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdProyecto" Type="int" Mode="In" />
+    <Parameter Name="idTarea" Type="int" Mode="In" />
+    <Parameter Name="NombreTarea" Type="varchar" Mode="In" />
+    <Parameter Name="descripcionTarea" Type="varchar(max)" Mode="In" />
+    <Parameter Name="idDatosPersonales" Type="int" Mode="In" />
+    <Parameter Name="HHTarea" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertContactoCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idcliente" Type="int" Mode="In" />
+    <Parameter Name="NombreContacto" Type="varchar" Mode="In" />
+    <Parameter Name="EmailContacto" Type="varchar" Mode="In" />
+    <Parameter Name="celular" Type="varchar" Mode="In" />
+    <Parameter Name="skype" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_InsertContactoProveedor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idcontacto" Type="int" Mode="In" />
+    <Parameter Name="idProveedor" Type="int" Mode="In" />
+    <Parameter Name="NombreContacto" Type="varchar" Mode="In" />
+    <Parameter Name="EmailContacto" Type="varchar" Mode="In" />
+    <Parameter Name="celular" Type="varchar" Mode="In" />
+    <Parameter Name="skype" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_RegistroEmpresa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RutEmpresa" Type="varchar" Mode="In" />
+    <Parameter Name="RazonSocial" Type="varchar" Mode="In" />
+    <Parameter Name="RutPersona" Type="varchar" Mode="In" />
+    <Parameter Name="NombrePersona" Type="varchar" Mode="In" />
+    <Parameter Name="EmailPersona" Type="varchar" Mode="In" />
+    <Parameter Name="Contraseña" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_UpdateContacto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idContacto" Type="int" Mode="In" />
+    <Parameter Name="NombreContacto" Type="varchar" Mode="In" />
+    <Parameter Name="EmailContacto" Type="varchar" Mode="In" />
+    <Parameter Name="celular" Type="varchar" Mode="In" />
+    <Parameter Name="skype" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_set_UpdateEmpresa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idEmpresa" Type="int" Mode="In" />
+    <Parameter Name="razonSocial" Type="varchar" Mode="In" />
+    <Parameter Name="direccionEmpresa" Type="varchar" Mode="In" />
+    <Parameter Name="fonoEmpresa" Type="varchar" Mode="In" />
+    <Parameter Name="urlLogo" Type="varchar" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="S4TControlModelStoreContainer">
+    <EntitySet Name="CARGASPERSONA" EntityType="Self.CARGASPERSONA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cargos" EntityType="Self.Cargos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contactos" EntityType="Self.Contactos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ControlHITO" EntityType="Self.ControlHITO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DATOSCONYUGE" EntityType="Self.DATOSCONYUGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DATOSEMERGENCIAPERSONA" EntityType="Self.DATOSEMERGENCIAPERSONA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DATOSPERSONALES" EntityType="Self.DATOSPERSONALES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DATOSPERSONAPROYECTO" EntityType="Self.DATOSPERSONAPROYECTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DIRECCIONPERSONA" EntityType="Self.DIRECCIONPERSONA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMPRESAS" EntityType="Self.EMPRESAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ESTADOCIVIL" EntityType="Self.ESTADOCIVIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hitos" EntityType="Self.Hitos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogControl" EntityType="Self.LogControl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Perfil" EntityType="Self.Perfil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Proveedores" EntityType="Self.Proveedores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Proyectos" EntityType="Self.Proyectos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegistroAsistencia" EntityType="Self.RegistroAsistencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegistroMovimientosHitos" EntityType="Self.RegistroMovimientosHitos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegistroTarea" EntityType="Self.RegistroTarea" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SOLICITUD_VACACIONES" EntityType="Self.SOLICITUD_VACACIONES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TareaProyecto" EntityType="Self.TareaProyecto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TIPOPERSONA" EntityType="Self.TIPOPERSONA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ValorHH" EntityType="Self.ValorHH" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estados" EntityType="Self.Estados" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Estados].[id_Estado] AS [id_Estado], 
+    [Estados].[NombreEstado] AS [NombreEstado], 
+    [Estados].[Activo] AS [Activo]
+    FROM [dbo].[Estados] AS [Estados]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TipoProveedores" EntityType="Self.TipoProveedores" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TipoProveedores].[id_TipoProveedor] AS [id_TipoProveedor], 
+    [TipoProveedores].[NombreTipo] AS [NombreTipo], 
+    [TipoProveedores].[Descripcion] AS [Descripcion]
+    FROM [dbo].[TipoProveedores] AS [TipoProveedores]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
